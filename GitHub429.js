@@ -1,5 +1,6 @@
-#!name=github429
-#!desc=解决github更新资源429问题
+#!name=GitHub429
+#!desc=解决GitHub更新资源429问题
+#!icon=https://github.com/taikulayyds/icon/raw/refs/heads/mina/loon.png
 #!date=2025-04-29
 
 [Rewrite]
