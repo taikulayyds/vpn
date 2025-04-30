@@ -1,16 +1,17 @@
 #!name=吉利汽车签到
-#!desc=非一次性解锁，每次使用需要先启用此插件，再进入应用方可解锁，解锁成功后支持版本升级。
-#!openUrl=https://apps.apple.com/app/id6680187161
+#!desc=吉利汽车签到。
+#!openUrl=https://apps.apple.com/app/id1518762715
 #!author=wf021325[https://github.com/wf021325]
 #!tag=解锁
 #!system=
 #!system_version=
 #!homepage=https://github.com/wf021325/qx
-#!icon=https://github.com/taikulayyds/icon/raw/refs/heads/mina/rangwomiaomiao.png
+#!icon=https://github.com/taikulayyds/icon/raw/refs/heads/mina/geely.png
 #!date=2025-04-30
 
 [Script]
-http-response ^https?:\/\/app\.geely\.com\/my\/getMyCenterCounts$ script-path=https://raw.githubusercontent.com/wf021325/qx/master/task/geely.js, requires-body=true, timeout=60, tag=geely
+http-response ^https?:\/\/app\.geely\.com\/my\/getMyCenterCounts$ script-path=https://raw.githubusercontent.com/wf021325/qx/master/task/geely.js, requires-body=true, timeout=60, tag=吉利汽车签到获取cookie
+
 cron "5 8 * * *" script-path=https://raw.githubusercontent.com/wf021325/qx/master/task/geely.js, timeout=120, tag=吉利汽车签到
 
 [MitM]
