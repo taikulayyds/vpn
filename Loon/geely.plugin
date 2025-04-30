@@ -1,5 +1,5 @@
 #!name=吉利汽车签到
-#!desc=吉利汽车签到。
+#!desc=添加脚本，获取cookie，每日自动签到。
 #!openUrl=https://apps.apple.com/app/id1518762715
 #!author=wf021325[https://github.com/wf021325]
 #!tag=解锁
@@ -12,7 +12,7 @@
 [Script]
 http-response ^https?:\/\/app\.geely\.com\/my\/getMyCenterCounts$ script-path=https://raw.githubusercontent.com/wf021325/qx/master/task/geely.js, requires-body=true, timeout=60, tag=吉利汽车签到获取cookie
 
-cron "5 8 * * *" script-path=https://raw.githubusercontent.com/wf021325/qx/master/task/geely.js, timeout=120, tag=吉利汽车签到
+cron "5 8 * * *" script-path=https://raw.githubusercontent.com/wf021325/qx/master/task/geely.js, timeout=120, tag=吉利汽车签到脚本
 
 [MitM]
 hostname=app.geely.com
