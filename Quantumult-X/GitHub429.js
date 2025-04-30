@@ -1,5 +1,5 @@
 #!name=GitHub429
-#!desc=解决GitHub更新资源429问题
+#!desc=解决GitHub速率限制导致更新资源返回429问题
 #!icon=https://github.com/taikulayyds/icon/raw/refs/heads/mina/loon.png
 #!date=2025-04-29
 
