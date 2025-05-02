@@ -1,5 +1,5 @@
 # AUTHOR: blackmatrix7 & DH & Luca
-# 如果会频繁的转圈，可以将以下规则添加
+# 如果TG会频繁的转圈，可以将以下规则添加
 # IP-CIDR,95.161.76.100/31,REJECT-NO-DROP,no-resolve,pre-matching
 DOMAIN,api.swiftgram.app
 DOMAIN-SUFFIX,comments.app
@@ -27,6 +27,7 @@ IP-CIDR,149.154.168.0/22,no-resolve
 IP-CIDR,91.108.4.0/22,no-resolve
 IP-CIDR,91.108.8.0/22,no-resolve
 IP-CIDR,91.108.56.0/22,no-resolve
+IP-CIDR,95.161.76.100/31,REJECT-NO-DROP,no-resolve,pre-matching
 IP-CIDR,95.161.64.0/20,no-resolve
 IP-CIDR,149.154.160.0/22,no-resolve
 IP-CIDR,149.154.162.0/23,no-resolve
