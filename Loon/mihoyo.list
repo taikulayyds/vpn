@@ -18,6 +18,8 @@ DOMAIN-SUFFIX,hk4e-api.mihoyo.com
 DOMAIN-SUFFIX,hk4e.mihoyo.com
 DOMAIN-SUFFIX,autopatchcn.yuanshen.com
 DOMAIN-SUFFIX,log-upload.mihoyo.com
+DOMAIN-SUFFIX,sysdk.cl2009.com
+DOMAIN-SUFFIX,2408:4002:1212
 
 # 崩坏3（国服）
 DOMAIN-SUFFIX,bh3.mihoyo.com
