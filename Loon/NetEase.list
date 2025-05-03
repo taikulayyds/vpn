@@ -39,3 +39,5 @@ DOMAIN,epay.163.com
 # 新闻与社区
 DOMAIN,news.163.com
 DOMAIN-SUFFIX,lofter.com
+# 其它
+DOMAIN-SUFFIX,ok.166.net
