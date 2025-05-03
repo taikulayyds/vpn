@@ -1,11 +1,17 @@
-# 米哈游大陆服务
+# 米哈游通用服务
 DOMAIN-SUFFIX,mihoyo.com
 DOMAIN-SUFFIX,yuanshen.com
 DOMAIN-SUFFIX,webstatic.mihoyo.com
 DOMAIN-SUFFIX,api-takumi.mihoyo.com
+DOMAIN-SUFFIX,api-takumi-record.mihoyo.com
 DOMAIN-SUFFIX,user.mihoyo.com
 DOMAIN-SUFFIX,account.mihoyo.com
 DOMAIN-SUFFIX,bbs.mihoyo.com
+DOMAIN-SUFFIX,pubstatic.mihoyo.com
+DOMAIN-SUFFIX,passport-api.mihoyo.com
+DOMAIN-SUFFIX,webapi.account.mihoyo.com
+DOMAIN-SUFFIX,binding-api.mihoyo.com
+DOMAIN-SUFFIX,sdk-static.mihoyo.com
 
 # 原神（国服）
 DOMAIN-SUFFIX,hk4e-api.mihoyo.com
@@ -24,23 +30,8 @@ DOMAIN-SUFFIX,hkrpg-api.mihoyo.com
 # 未定事件簿（国服）
 DOMAIN-SUFFIX,wd.mihoyo.com
 
-# 米游社（国服）主域名
-DOMAIN-SUFFIX,bbs.mihoyo.com
-
-# 米游社 API 接口
-DOMAIN-SUFFIX,api-takumi.mihoyo.com
-DOMAIN-SUFFIX,api-takumi-record.mihoyo.com
-DOMAIN-SUFFIX,pubstatic.mihoyo.com
-DOMAIN-SUFFIX,webstatic.mihoyo.com
-DOMAIN-SUFFIX,webapi.account.mihoyo.com
-DOMAIN-SUFFIX,passport-api.mihoyo.com
-DOMAIN-SUFFIX,hk4e-api.mihoyo.com
-
-# 米游社签到相关
-DOMAIN-SUFFIX,api-takumi.mihoyo.com
-DOMAIN-SUFFIX,binding-api.mihoyo.com
-DOMAIN-SUFFIX,community.mihoyo.com
-
-# 登录跳转和认证相关
-DOMAIN-SUFFIX,sdk-os-static.mihoyo.com
-DOMAIN-SUFFIX,sdk-static.mihoyo.com
+# 米游社新版域名（miyoushe.com）
+DOMAIN-SUFFIX,miyoushe.com
+DOMAIN-SUFFIX,www.miyoushe.com
+DOMAIN-SUFFIX,sdk.miyoushe.com
+DOMAIN-SUFFIX,activity.miyoushe.com
