@@ -1,0 +1,41 @@
+# ======= 网易国内核心服务直连 ======= #
+# 主域名覆盖
+DOMAIN-SUFFIX,163.com
+DOMAIN-SUFFIX,netease.com
+# 邮箱服务
+DOMAIN-SUFFIX,126.com
+# 邮箱服务
+DOMAIN-SUFFIX,yeah.net
+# 有道教育
+DOMAIN-SUFFIX,youdao.com
+
+# 网易云音乐资源
+DOMAIN-SUFFIX,126.net
+# 有道静态资源
+DOMAIN-SUFFIX,ydstatic.com
+
+# ======= 细分业务直连 ======= #
+# 网易大神社区
+DOMAIN-SUFFIX,ds.163.com
+# CC直播
+DOMAIN-SUFFIX,cc.163.com
+# 梦幻西游
+DOMAIN-SUFFIX,my.163.com
+# 逆水寒
+DOMAIN-SUFFIX,nsh.163.com
+# 第五人格
+DOMAIN-SUFFIX,id5.163.com
+# 蛋仔派对
+DOMAIN-SUFFIX,dz.163.com
+
+# 音乐与视频
+DOMAIN,music.163.com
+DOMAIN-SUFFIX,zhishi163.com
+
+# 电商与生活(网易严选/网易支付)
+DOMAIN,you.163.com
+DOMAIN,epay.163.com
+
+# 新闻与社区
+DOMAIN,news.163.com
+DOMAIN-SUFFIX,lofter.com
