@@ -10,4 +10,4 @@
 ^https:\/\/github\.com\/ header-replace Accept-Language en-us
 
 [Mitm]
-hostname = raw.githubusercontent.com,gist.githubusercontent.com,github.com
+hostname = githubusercontent.com,github.com
