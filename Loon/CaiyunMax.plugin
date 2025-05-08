@@ -1,0 +1,52 @@
+[Plugin]
+# 彩云天气终极净化插件[墨鱼版+增强脚本]
+# 作者：@ddgksf2013 & wf021325
+# 更新时间：2024-09-27
+# 版本：V2.0.0
+# 说明：完整广告屏蔽+VIP功能解锁（支持7.20.2以下版本及7.22.x新版）
+# 项目地址：https://github.com/ddgksf2013/Rewrite
+
+# ======== 核心功能 ========
+# 1. 全量广告屏蔽（开屏/首页/发现页/通知）
+# 2. 深度VIP伪装（48H降水/卫星云图/潮汐预报）
+# 3. 新版兼容处理（7.22.x版本特殊适配）
+# 4. 数据缓存清理支持（巨魔/轻松签用户）
+
+# ======== 重写规则 ========
+[Rewrite]
+# VIP伪装核心接口
+^https:\/\/biz\.cyapi\.cn\/(api\/v\d\/user_detail|v\d\/user) url script-response-body https://raw.githubusercontent.com/ddgksf2013/Scripts/master/caiyun_json.js
+
+# 广告屏蔽规则组
+^https:\/\/(wrapper|api\.caiyunapp|starplucker|ad)\.cyapi\.cn\/(v\d\/activity|v\d/operation/.*|v\d/campaigns|v\d\/req\?app_name=weather) url reject
+
+# 新版7.22.x适配
+^https:\/\/starplucker\.cyapi\.cn\/v3\/(config|operation|campaigns|notification) url script-response-body https://raw.githubusercontent.com/wf021325/qx/master/js/caiyun.js
+^https:\/\/biz\.cyapi\.cn\/p\/v1\/(trial_card\/info|entries) url reject
+
+# 功能增强模块
+^https:\/\/wrapper\.cyapi\.cn\/v1\/(satellite|nafp\/origin_images) url script-request-header https://raw.githubusercontent.com/wf021325/qx/master/js/caiyun.js
+^https:\/\/starplucker\.cyapi\.cn\/v3\/operation\/(banners|features|feeds) url script-response-body https://raw.githubusercontent.com/wf021325/qx/master/js/caiyun.js
+
+# 数据上报拦截
+^http:\/\/gather\.colorfulclouds\.net url reject
+
+# ======== MITM配置 ========
+[MITM]
+hostname = %APPEND% 
+*.cyapi.cn, 
+api.caiyunapp.com, 
+gather.colorfulclouds.net
+
+# ======== 使用说明 ========
+[Script]
+# 版本切换提示：
+# 1. ≤7.20.2版本：直接使用即可
+# 2. ≥7.22.0版本：需先登录旧版解锁后在线升级
+# 3. 广告异常时：使用轻松签清除应用数据（保留登录状态）
+# 4. 需要配置MITM并信任根证书
+
+# 高级功能说明：
+# ✔️ 卫星云图/48H降水 ✔️ 60天潮汐预报
+# ✔️ 驾驶/骑行天气模式 ✔️ 地震地图数据
+# ✖️ 所有推广活动 ✖️ 会员弹窗提醒
