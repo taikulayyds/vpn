@@ -1,0 +1,51 @@
+[Plugin]
+# 彩云天气净化[墨鱼版] Loon插件
+# 作者：@ddgksf2013
+# 更新时间：2024-09-27
+# 版本：V1.0.8
+# 说明：去除彩云天气广告并伪装VIP功能（需旧版 ≤7.20.2）
+# 项目地址：https://github.com/ddgksf2013/Rewrite
+
+# ======== 脚本功能 ========
+# 1. 屏蔽广告请求
+# 2. 伪装VIP解锁48小时降水
+# 3. 移除首页/发现页推广
+# 4. 拦截通用广告域名
+# 使用前需配置MITM域名：biz.cyapi.cn
+
+# ======== 重写规则 ========
+[Rewrite]
+# 伪装VIP解锁48小时降水[新验证接口]
+^https:\/\/biz\.cyapi\.cn\/api\/v\d\/user_detail url script-response-body https://raw.githubusercontent.com/ddgksf2013/Scripts/master/caiyun_json.js
+# 伪装VIP解锁48小时降水[旧接口]
+^https:\/\/biz\.cyapi\.cn\/v\d\/user url script-response-body https://raw.githubusercontent.com/ddgksf2013/Scripts/master/caiyun_json.js
+# 屏蔽图层推广
+^https:\/\/wrapper\.cyapi\.cn\/v\d\/activity url script-response-body https://raw.githubusercontent.com/ddgksf2013/Scripts/master/caiyun_json.js
+# 屏蔽活动推广
+^https:\/\/api\.caiyunapp\.com\/v\d\/activity url script-response-body https://raw.githubusercontent.com/ddgksf2013/Scripts/master/caiyun_json.js
+# 屏蔽首页推广
+^https:\/\/starplucker\.cyapi\.cn\/v\d/operation/homefeatures url script-response-body https://raw.githubusercontent.com/ddgksf2013/Scripts/master/caiyun_json.js
+# 屏蔽SVIP提醒
+^https:\/\/starplucker\.cyapi\.cn\/v\d/notification/message_center url script-response-body https://raw.githubusercontent.com/ddgksf2013/Scripts/master/caiyun_json.js
+# 屏蔽雨季特惠
+^https:\/\/starplucker\.cyapi\.cn\/v\d/config/cypage url script-response-body https://raw.githubusercontent.com/ddgksf2013/Scripts/master/caiyun_json.js
+# 屏蔽信息流推荐
+^https:\/\/starplucker\.cyapi\.cn\/v\d/operation/feeds url script-response-body https://raw.githubusercontent.com/ddgksf2013/Scripts/master/caiyun_json.js
+# 屏蔽发现页banners
+^https:\/\/starplucker\.cyapi\.cn\/v\d/operation/banners url script-response-body https://raw.githubusercontent.com/ddgksf2013/Scripts/master/caiyun_json.js
+# 屏蔽发现页中间模块
+^https:\/\/starplucker\.cyapi\.cn\/v\d/operation/features url script-response-body https://raw.githubusercontent.com/ddgksf2013/Scripts/master/caiyun_json.js
+# 屏蔽发现页活动
+^https:\/\/starplucker\.cyapi\.cn\/v\d/campaigns url script-response-body https://raw.githubusercontent.com/ddgksf2013/Scripts/master/caiyun_json.js
+# 拦截广告域名请求
+^https:\/\/ad\.cyapi\.cn\/v\d url reject
+
+# ======== MITM配置 ========
+[MITM]
+hostname = %APPEND% biz.cyapi.cn, wrapper.cyapi.cn, api.caiyunapp.com, starplucker.cyapi.cn, ad.cyapi.cn
+
+# 使用说明：
+# 1. 需配合彩云天气旧版（≤7.20.2）使用
+# 2. 在Loon中启用MITM并信任证书
+# 3. 引用本插件后重启生效
+# 问题反馈：ddgksf2013@163.com
