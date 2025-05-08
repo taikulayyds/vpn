@@ -18,7 +18,7 @@
 ^https:\/\/starplucker\.cyapi\.cn\/v3\/config\/cypage\/home_activity\/conditions$ url reject-dict
 ^https:\/\/starplucker\.cyapi\.cn\/v3\/config\/cypage\/40day\/conditions\/local$ url reject-dict
 
-[Plugin]
+[Script]
 # 广告屏蔽规则
 script-request-header ^https:\/\/ad\.cyapi\.cn\/v2\/req\?app_name=weather url script-path=https://raw.githubusercontent.com/wf021325/qx/master/js/caiyun.js
 script-response-body ^https:\/\/biz\.cyapi\.cn\/(p\/v1\/trial_card\/info|api\/v1\/token\/device|p\/v1\/entries) url script-path=https://raw.githubusercontent.com/wf021325/qx/master/js/caiyun.js
