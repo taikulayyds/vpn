@@ -1,0 +1,47 @@
+[Rewrite]
+# 普通版开屏广告(此广告不定时出现)
+^https:\/\/ad\.cyapi\.cn\/v2\/req\?app_name=weather url reject-dict
+# 7.1.9 限时福利Svip
+^https:\/\/biz\.cyapi\.cn\/p\/v1\/trial_card\/info url reject-dict
+# 7.2.0普通版修改VIP后提示账号迁移
+^https:\/\/biz\.cyapi\.cn\/api\/v1\/token\/device$ url reject-dict
+
+# 亲友卡
+^https:\/\/biz\.cyapi\.cn\/p\/v1\/entries url reject-dict
+# 左上角+进去推荐
+^https:\/\/starplucker\.cyapi\.cn\/v3\/config$ url reject-dict
+
+# 通知
+^https:\/\/starplucker\.cyapi\.cn\/v3\/notification\/message_center url reject-dict
+# 会员限时弹窗
+^https:\/\/starplucker\.cyapi\.cn\/v3\/config\/cypage\/home\/conditions\/local$ url reject-dict
+^https:\/\/starplucker\.cyapi\.cn\/v3\/config\/cypage\/home_activity\/conditions$ url reject-dict
+^https:\/\/starplucker\.cyapi\.cn\/v3\/config\/cypage\/40day\/conditions\/local$ url reject-dict
+
+[Plugin]
+# 广告屏蔽规则
+script-request-header ^https:\/\/ad\.cyapi\.cn\/v2\/req\?app_name=weather url script-path=https://raw.githubusercontent.com/wf021325/qx/master/js/caiyun.js
+script-response-body ^https:\/\/biz\.cyapi\.cn\/(p\/v1\/trial_card\/info|api\/v1\/token\/device|p\/v1\/entries) url script-path=https://raw.githubusercontent.com/wf021325/qx/master/js/caiyun.js
+script-response-body ^https:\/\/starplucker\.cyapi\.cn\/v3\/(config|notification\/message_center|config\/cypage\/.*) url script-path=https://raw.githubusercontent.com/wf021325/qx/master/js/caiyun.js
+
+# 功能解锁规则
+script-response-body ^https:\/\/wrapper\.cyapi\.cn\/v1\/activity\?app_name=weather url script-path=https://raw.githubusercontent.com/wf021325/qx/master/js/caiyun.js
+script-request-header ^https:\/\/wrapper\.cyapi\.cn\/v1\/(satellite|nafp\/origin_images) url script-path=https://raw.githubusercontent.com/wf021325/qx/master/js/caiyun.js
+script-response-body ^https:\/\/biz\.cyapi\.cn\/(v2\/user|api\/v1\/user_detail) url script-path=https://raw.githubusercontent.com/wf021325/qx/master/js/caiyun.js
+script-request-header ^https:\/\/starplucker\.cyapi\.cn\/v3\/ url script-path=https://raw.githubusercontent.com/wf021325/qx/master/js/caiyun.js
+
+# 界面净化规则
+script-response-body ^https:\/\/starplucker\.cyapi\.cn\/v3\/(operation\/banners|operation\/features|campaigns|operation\/feeds) url script-path=https://raw.githubusercontent.com/wf021325/qx/master/js/caiyun.js
+
+# 本地拒绝规则
+hostname = gather.colorfulclouds.net, reject
+
+[MITM]
+hostname = *.cyapi.cn, *.colorfulclouds.net
+
+[Script]
+# 核心脚本逻辑（需保留原有JS代码）
+type = script
+name = caiyun_pro
+script = 
+// 此处粘贴原始JS代码内容（需移除注释中的Quantumult X专用语法）
