@@ -5,7 +5,7 @@
 #!icon=https://github.com/taikulayyds/icon/raw/refs/heads/mina/GitHub.png
 #!date=2025-05-10
 
-[Plugin]
+[Rewrite]
 # App去广告系列
 # 阿里系列开屏
 ^https?:\/\/acs\.m\.taobao\.com\/gw\/mtop\.(alibaba\.advertisementservice\.getadv|alimama\.etao\.config\.query\/.+?etao_advertise|alimusic\.common\.mobileservice\.startinit|etao\.noah\.query\/.+tao_splash|film\.mtopadvertiseapi\.queryadvertise|o2o\.ad\.gateway\.get|taobao\.idle\.home\.welcome|trip\.activity\.querytmsresources) url reject
