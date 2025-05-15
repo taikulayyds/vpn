@@ -1,7 +1,7 @@
 #!name=高德地图净化[墨鱼版]
 #!desc=使用前请卸载高德地图，挂载脚本然后使用
 #!openUrl=https://apps.apple.com/app/id461703208
-#!author=@ddgksf2013[https://github.com/ddgksf2013]
+#!author=ddgksf2013[https://github.com/ddgksf2013]
 #!homepage=https://github.com/ddgksf2013
 #!loon_version = 3.2.4(787)
 #!icon = https://github.com/taikulayyds/icon/raw/refs/heads/mina/gaode.png
