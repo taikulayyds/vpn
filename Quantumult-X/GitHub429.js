@@ -4,8 +4,9 @@
 #!date=2025-04-29
 
 [Rewrite]
-^https:\/\/(raw|gist)\.githubusercontent\.com\/ header-replace Accept-Language en-us
 ^https:\/\/github\.com\/ header-replace Accept-Language en-us
+^https:\/\/(raw|gist)\.githubusercontent\.com\/ header-replace Accept-Language en-us
+^https://.*\.githubusercontent\.com\/ url request-header (\r\n)Accept-Language:.+(\r\n) request-header $1Accept-Language: en-us$2
 
 [Mitm]
-hostname = raw.githubusercontent.com,gist.githubusercontent.com,github.com
+hostname = raw.githubusercontent.com,gist.githubusercontent.com,github.com,*.githubusercontent.com
