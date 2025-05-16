@@ -13,4 +13,4 @@
 http-response https://www.pdreamer.com/aymyProd/api/getUserInfo script-path=https://raw.githubusercontent.com/Yu9191/Rewrite/main/rwmm.js, requires-body=true, timeout=60, tag=rwmm
 
 [MitM]
-hostname=www.pdreamer.com
+hostname = www.pdreamer.com
