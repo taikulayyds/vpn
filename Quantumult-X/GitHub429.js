@@ -9,4 +9,4 @@
 ^https://.*\.githubusercontent\.com\/ url request-header (\r\n)Accept-Language:.+(\r\n) request-header $1Accept-Language: en-us$2
 
 [Mitm]
-hostname = githubusercontent.com,raw.githubusercontent.com,gist.githubusercontent.com,github.com,*.githubusercontent.com
+hostname = githubusercontent.com, raw.githubusercontent.com, gist.githubusercontent.com, github.com, *.githubusercontent.com
