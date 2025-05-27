@@ -5,6 +5,9 @@
  #!openUrl = https://d2kz22zwxc5env.cloudfront.net
  #!icon = https://github.com/taikulayyds/icon/raw/refs/heads/mina/haose.png
 
+ [Rule]
+ DOMAIN-SUFFIX,d2kz22zwxc5env.cloudfront.net,DIRECT
+ 
  [Mitm]
  hostname = 3e8qs.com, *.cloudfront.net, cpmg23.com
 
