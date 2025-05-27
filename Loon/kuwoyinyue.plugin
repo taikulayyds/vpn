@@ -65,4 +65,4 @@ http-response ^https?:\/\/appi.kuwo.cn/kuwopay/personal/cells script-path=https:
 http-response ^https:\/\/[a-z0-9A-Z]+\.kuwo\.cn\/mobi\.s\?f=kwxs script-path=https://gist.githubusercontent.com/ddgksf2013/0f76e952f0c4a2579932f45a209b40c3/raw/mykkmusic.vip.js, requires-body=true, timeout=60, tag=音乐播放接口
 
 [MITM]
-hostname = *.kuwo.cn,*.lrts.me
+hostname = *.kuwo.cn, *.lrts.me
