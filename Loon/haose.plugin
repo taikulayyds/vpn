@@ -2,11 +2,11 @@
  #!desc=去除广告解锁会员金币视频
  #!author=小白
  #!date=2025-05-20
- #!openUrl = https://d2kz22zwxc5env.cloudfront.net/
+ #!openUrl = https://d2kz22zwxc5env.cloudfront.net
  #!icon = https://github.com/taikulayyds/icon/raw/refs/heads/mina/haose.png
 
  [Mitm]
- hostname = 3e8qs.com, *.cloudfront.net
+ hostname = 3e8qs.com, *.cloudfront.net, cpmg23.com
 
  [Script]
  # 会员
