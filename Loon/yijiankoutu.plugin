@@ -1,7 +1,7 @@
 #!name=一键抠图解锁VIP
 #!desc=非一次性解锁，每次使用需要先启用此插件，再进入应用方可解锁，解锁成功后支持版本升级。
 #!openUrl=https://apps.apple.com/app/id1631498311
-#!author=chxm1023[https://github.com/chxm1023]
+#!author=chxm1023[https://github.com/1074305015/chxm1023/raw/refs/heads/main/yijiankoutu.js]
 #!tag=解锁
 #!system=
 #!system_version=
@@ -10,7 +10,7 @@
 #!date=2025-04-30
 
 [Script]
-http-response ^https?:\/\/api\.mattingm\.com\/receipt_api\/user\/info script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/yijiankoutu.js, requires-body=true, timeout=60, tag=yijiankoutu
+http-response ^https?:\/\/api\.mattingm\.com\/receipt_api\/user\/info script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/yijiankoutu.js, requires-body=true, timeout=60, tag=一键抠图解锁VIP
 
 [MitM]
 hostname = api.mattingm.com
