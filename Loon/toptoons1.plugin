@@ -7,8 +7,8 @@
  #!icon =https://github.com/taikulayyds/icon/raw/refs/heads/mina/toptoons.png
 
 [Script]
-http-request ^https?:\/\/toptoons\.(online|click)\/(buychapter|comic\/\d+)
+ http-request ^https?:\/\/toptoons\.(online|click)\/(buychapter|comic\/\d+)
 script-path=https://raw.githubusercontent.com/WeiGiegie/666/main/toptoons.js,requires-body=true,timeout=10,tag=TopToons 解锁
 
 [MITM]
-hostname = toptoons.click, toptoons.online
+ hostname = toptoons.click, toptoons.online
