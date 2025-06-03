@@ -3,13 +3,13 @@
  #!author=lOS-脚本研究院[https://raw.githubusercontent.com/WeiGiegie/666/main/toptoons.js]
  #!date=2025-06-03
  #!openUrl=https://toptoons.click
- #!homepage=https://t.me/GieGie777
- #!icon =https://github.com/taikulayyds/icon/raw/refs/heads/mina/toptoons.png
+ #!homepage=https://github.com/WeiGiegie
+ #!icon=https://github.com/taikulayyds/icon/raw/refs/heads/mina/toptoons.png
 
 
  [Mitm]
  hostname = toptoons.click, toptoons.online
 
  [Script]
- # >TopToons顶通韩漫网 金币付费购买章节即可，无需登录！
+ # >TopToons顶通韩漫网 金币付费购买章节即可，无需登录！（https://t.me/GieGie777）
  http-request ^https?:\/\/toptoons.(online|click)\/(buychapter|comic\/\d+) script-path=https://raw.githubusercontent.com/WeiGiegie/666/main/toptoons.js, timeout=60, tag=TopToons顶通韩漫网
