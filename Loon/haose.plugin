@@ -2,8 +2,9 @@
  #!desc=去除广告解锁会员金币视频
  #!author=小白[https://raw.githubusercontent.com/chmg2025/script/refs/heads/main/mr.js]
  #!date=2025-05-23
- #!openUrl = https://d2kz22zwxc5env.cloudfront.net
- #!icon = https://github.com/taikulayyds/icon/raw/refs/heads/mina/haose.png
+ #!homepage=https://github.com/chmg2025
+ #!openUrl=https://d2kz22zwxc5env.cloudfront.net
+ #!icon=https://github.com/taikulayyds/icon/raw/refs/heads/mina/haose.png
 
  [Rule]
  DOMAIN-SUFFIX,d2kz22zwxc5env.cloudfront.net,DIRECT
