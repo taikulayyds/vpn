@@ -1,0 +1,14 @@
+ #!name=姬漫社
+ #!desc=解锁=视频,漫画,写真,动漫。 无需登录！
+ #!author=lOS-脚本研究院[https://raw.githubusercontent.com/WeiGiegie/666/main/jmshe.js]
+ #!date=2025-06-05
+ #!openUrl=https://oxtoon.cyou
+ #!homepage=https://github.com/WeiGiegie
+ #!icon=https://github.com/taikulayyds/icon/raw/refs/heads/mina/jmshe.png
+
+ [Mitm]
+ hostname = oxtoon.cyou, oxtoon.work, oxtoon.monster, oxtoon.net
+
+ [Script]
+ # > 姬漫社,解锁=视频,漫画,写真,动漫。 无需登录！（https://t.me/GieGie777）
+ http-request https?:\/\/oxtoon.(cyou|work|monster|net)\/((detail|comic)\/\d|buychapter).*$ script-path=https://raw.githubusercontent.com/WeiGiegie/666/main/jmshe.js, timeout=60, tag=姬漫社
