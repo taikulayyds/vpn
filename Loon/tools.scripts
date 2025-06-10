@@ -15,4 +15,3 @@ generic script-path=https://raw.githubusercontent.com/Keywos/rule/main/loon/ipap
 generic script-path=https://raw.githubusercontent.com/Loon0x00/LoonExampleConfig/master/Script/generic_example.js, timeout=10, tag=GeoLocation, img-url=https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/ipInfo.png
 generic script-path=https://raw.githubusercontent.com/getsomecat/Loon/main/Net_Speedlite.js, tag=网络延迟测试, timeout=10,img-url=bolt.system
 generic script-path = https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/tools/LocationDetection.js, timeout = 10, tag = 地理位置查询, img-url = location.circle.system
-generic script-path = https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/tools/NodeUnlockDetection.js, timeout = 20, tag = 节点解锁查询, img-url = play.circle.system
