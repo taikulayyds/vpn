@@ -1,0 +1,34 @@
+ #!name=网易云音乐
+ #!desc=解锁会员音频、音质
+ #!author=lOS-脚本研究院[https://raw.githubusercontent.com/WeiGiegie/666/main/wangyiyun.js]
+ #!date=2025-07-07
+ #!openUrl=https:/apps.apple.com/app/id590338362
+ #!homepage=https://github.com/WeiGiegie
+ #!icon=https://github.com/taikulayyds/icon/raw/refs/heads/mina/wangyiyun.png
+
+
+[Rewrite]
+# 去除部分广告
+^https?://interface.*\.music\.163\.com/eapi/ad/get url reject
+^https?://interface.*\.music\.163\.com/eapi/ad/config/get url reject
+^https?://interface.*\.music\.163\.com/eapi/ad/iyunIds url reject
+^https?://interface.*\.music\.163\.com/eapi/ad/prefetch/select url reject
+^https?://interface.*\.music\.163\.com/eapi/ad/loading/current url reject
+
+[Script]
+http-request ^https:\/\/interface3?\.music\.163\.com\/eapi\/playermode\/ script-path=https://raw.githubusercontent.com/WeiGiegie/666/main/wangyiyun.js, timeout=60, tag=播放器会员皮肤
+
+http-request ^https:\/\/interface3?\.music\.163\.com\/eapi\/search\/complex\/(page|rec\/song\/get) script-path=https://raw.githubusercontent.com/WeiGiegie/666/main/wangyiyun.js, timeout=60, tag=搜索结果会员歌曲
+
+http-request ^https:\/\/interface3?\.music\.163\.com\/eapi\/v3\/song\/detail script-path=https://raw.githubusercontent.com/WeiGiegie/666/main/wangyiyun.js, timeout=60, tag=播放器会员歌曲
+http-request ^https:\/\/interface3?\.music\.163\.com\/eapi\/song\/(chorus|enhance\/|play\/|type\/detail\/get) script-path=https://raw.githubusercontent.com/WeiGiegie/666/main/wangyiyun.js, timeout=60, tag=播放器会员歌曲
+http-request ^https:\/\/interface3?\.music\.163\.com\/eapi\/(v1\/artist\/top\/song|v3\/discovery\/recommend\/songs) script-path=https://raw.githubusercontent.com/WeiGiegie/666/main/wangyiyun.js, timeout=60, tag=播放器会员歌曲
+
+http-request ^https:\/\/interface3?\.music\.163\.com\/eapi\/vipnewcenter\/app\/resource\/newaccountpage script-path=https://raw.githubusercontent.com/WeiGiegie/666/main/wangyiyun.js, timeout=60, tag=侧边栏会员等级
+
+http-request ^https?:\/\/interface3?\.music\.163\.com\/eapi\/(homepage\/|v6\/)?playlist\/ script-path=https://raw.githubusercontent.com/WeiGiegie/666/main/wangyiyun.js, timeout=60, tag=首页歌单会员歌曲
+
+http-request ^https?:\/\/interface3?\.music\.163\.com\/eapi\/vipauth\/app\/auth\/(soundquality\/)?query script-path=https://raw.githubusercontent.com/WeiGiegie/666/main/wangyiyun.js, timeout=60, tag=会员认证
+
+[MITM]
+hostname = *music.163.com
