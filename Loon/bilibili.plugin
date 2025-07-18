@@ -5,7 +5,7 @@
 #!homepage=https://github.com/ddgksf2013
 #!loon_version = 3.2.4(787)
 #!icon = https://github.com/taikulayyds/icon/raw/refs/heads/mina/bilibili.png
-#!date = 2025-07-09
+#!date = 2025-07-18
 
 [Mitm]
 hostname = -broadcast.chat.bilibili.com, -cm.bilibili.com, -*cdn*.biliapi.net, -*tracker*.biliapi.net, app.bilibili.com, api.live.bilibili.com, *.bilibili.com, *.bili*.*, *.bilibili.*, grpc.biliapi.net, *biliapi.net
@@ -35,4 +35,8 @@ http-response ^https?:\/\/app\.bilibili\.com\/x\/resource\/show\/tab script-path
 http-response ^https?:\/\/app\.bilibili\.com\/x\/v2\/account\/mine script-path=https://raw.githubusercontent.com/ddgksf2013/Scripts/refs/heads/master/bilibili_json.js, requires-body=true, timeout=60, tag=哔哩哔哩广告净化
 http-response ^https?:\/\/app\.bilibili\.com\/x\/resource\/top\/activity script-path=https://raw.githubusercontent.com/ddgksf2013/Scripts/refs/heads/master/bilibili_json.js, requires-body=true, timeout=60, tag=哔哩哔哩广告净化
 http-response ^https://app.bilibili.com/x/v2/search/square script-path=https://raw.githubusercontent.com/ddgksf2013/Scripts/refs/heads/master/bilibili_json.js, requires-body=true, timeout=60, tag=哔哩哔哩广告净化
-http-response ^https:\/\/(grpc\.biliapi\.net|app\.bilibili\.com)\/bilibili\.(app\.(show\.v1\.Popular\/Index|dynamic\.v2\.Dynamic\/DynAll|view(unite)?\.v1\.View\/(View|ViewProgress|RelatesFeed)|playurl\.v1\.PlayURL\/PlayView|playerunite\.v1\.Player\/PlayViewUnite)|polymer\.app\.search\.v1\.Search\/SearchAll|community\.service\.dm\.v1\.DM\/DmView|main\.community\.reply\.v1\.Reply\/MainList|pgc\.gateway\.player\.v2\.PlayURL\/PlayView)$ script-path=https://raw.githubusercontent.com/kokoryh/Sparkle/refs/heads/master/dist/bilibili.protobuf.response.js, requires-body=true, binary-body-mode=true, timeout=60, tag=哔哩哔哩protobuf处理
+http-response ^https?:\/\/(grpc\.biliapi\.net|app\.bilibili\.com)\/bilibili\.polymer\.app\.search\.v1\.Search\/SearchAll$ script-path=https://github.com/BiliUniverse/ADBlock/releases/download/v0.6.19/response.bundle.js, requires-body=true, binary-body-mode=true, timeout=60, tag=哔哩哔哩广告净化
+http-response ^https?:\/\/(app\.bilibili\.com|grpc\.biliapi\.net)\/bilibili\.community\.service\.dm\.v1\.DM\/(DmView|DmSegMobile) script-path=https://github.com/BiliUniverse/ADBlock/releases/download/v0.6.19/response.bundle.js, requires-body=true, binary-body-mode=true, timeout=60, tag=哔哩哔哩广告净化
+http-response ^https:\/\/(grpc\.biliapi\.net|app\.bilibili\.com)\/bilibili\.app\.interface\.v1\.Teenagers\/ModeStatus script-path=https://github.com/BiliUniverse/ADBlock/releases/download/v0.6.19/response.bundle.js, requires-body=true, binary-body-mode=true, timeout=60, tag=哔哩哔哩广告净化
+http-response ^https?:\/\/(app\.bilibili\.com|grpc\.biliapi\.net)\/bilibili\.app\.(view|viewunite)\.v1\.View\/(View|TFInfo)$ script-path=https://github.com/BiliUniverse/ADBlock/releases/download/v0.6.19/response.bundle.js, requires-body=true, binary-body-mode=true, timeout=60, tag=哔哩哔哩广告净化
+http-response ^https?:\/\/(app\.bilibili\.com|grpc\.biliapi\.net)\/bilibili\.app\.dynamic\.v2\.Dynamic\/Dyn(All|Video)$ script-path=https://github.com/BiliUniverse/ADBlock/releases/download/v0.6.19/response.bundle.js, requires-body=true, binary-body-mode=true, timeout=60, tag=哔哩哔哩广告净化
