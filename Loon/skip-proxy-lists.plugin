@@ -1,16 +1,16 @@
 #!name=跳过代理检测
-#!desc=跳过部分应用的代理检测，网上国网、多看阅读、顺丰金融、广东农信、丰云行、中国银行缤纷生活、通信行程卡app、趣智校园、趣听音乐、光大手机银行、动卡空间、掌上12333、沃视频等
+#!desc=跳过部分应用的代理检测，网上国网、多看阅读、顺丰金融、广东农信、丰云行、中国银行缤纷生活、通信行程卡app、趣智校园、趣听音乐、光大手机银行、掌上12333、沃视频等
 #!author=mieqq[https://raw.githubusercontent.com/mieqq/mieqq/master/skip-proxy-lists.sgmodule]
 #!loon_version = 3.2.4(787)
 #!icon = https://github.com/taikulayyds/icon/raw/refs/heads/mina/imm.png
-#!date = 2025-07-14
+#!date = 2025-07-21
 
 [General]
 skip-proxy = %APPEND% www.baidu.com,yunbusiness.ccb.com,wxh.wo.cn,gate.lagou.com,www.abchina.com.cn,www.shanbay.com,login-service.mobile-bank.psbc.com,mobile-bank.psbc.com,id6.me
 
 always-real-ip = %APPEND% easy-login.10099.com.cn,*-update.xoyocdn.com,id6.me,open.e.189.cn
 
-# www.baidu.com：网上国网、多看阅读、顺丰金融、广东农信、丰云行、中国银行缤纷生活、通信行程卡app、趣智校园、趣听音乐、光大手机银行、动卡空间、掌上12333、沃视频
+# www.baidu.com：网上国网、多看阅读、顺丰金融、广东农信、丰云行、中国银行缤纷生活、通信行程卡app、趣智校园、趣听音乐、光大手机银行、掌上12333、沃视频
 # yunbusiness.ccb.com 建行生活
 # wxh.wo.cn：沃小号
 # gate.lagou.com：拉勾招聘
