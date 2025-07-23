@@ -1,0 +1,22 @@
+#!name = 节点检测工具
+#!desc = 节点检测、节点信息、节点解锁、节点网速等查询。详细见脚本
+#!openUrl = 
+#!author = KOP-XIAO[https://github.com/KOP-XIAO], xream[https://github.com/xream], Keywos[https://github.com/Keywos], dcpengx[https://github.com/dcpengx], 奶思[https://github.com/fmz200], 
+恩秀[https://github.com/sooyaaabo]
+#!system = 
+#!system_version = 
+#!loon_version = 3.3.2(877)
+#!homepage = https://github.com/taikulayyds/vpn/tree/mina/Loon
+#!icon = https://github.com/taikulayyds/icon/raw/refs/heads/mina/vpn-jc.png
+#!select = 入口查询超时时间ms, 100, 200, 500, 800, 1000, 1200, 2000, 5000, 10000
+#!select = 落地查询超时时间ms, 100, 200, 500, 1000, 1500, 2000, 3000, 5000, 10000
+#!select = 是否隐藏真实IP, 隐藏, 不隐藏
+#!date = 2025-06-15 00:00
+
+[Script]
+generic script-path=https://raw.githubusercontent.com/MCdasheng/Loon/main/Streaming/ChatGPT.js, timeout=10, tag=GPT解锁查询NS, img-url=https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/chxm1023/ChatGPT3.png
+generic script-path=https://raw.githubusercontent.com/MCdasheng/Loon/main/Streaming/Spotify.js, timeout=10, tag=Spotify解锁查询NS, img-url=https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/erdongchanyo/Spotify.png
+generic script-path=https://raw.githubusercontent.com/Loon0x00/LoonScript/main/MediaCheck/check.js, timeout=300, tag=流媒体-解锁查询NS, img-url=tv.and.mediabox
+generic script-path=https://raw.githubusercontent.com/Loon0x00/LoonExampleConfig/master/Script/generic_example.js, timeout=10, tag=GeoLocation地理位置NS, img-url=https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/ipInfo.png
+generic script-path=https://raw.githubusercontent.com/getsomecat/Loon/main/Net_Speedlite.js, tag=网络延迟测试NS, timeout=10,img-url=bolt.system
+generic script-path=https://raw.githubusercontent.com/deezertidal/private/main/ip-api.js, timeout=10, tag=节点信息查询NS, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Domestic.png
