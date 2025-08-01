@@ -7,19 +7,22 @@
 #!system_version=
 #!homepage=https://github.com/ddgksf2013
 #!icon=https://github.com/taikulayyds/icon/raw/refs/heads/mina/kuwo.png
-#!date=2025-04-30
+#!date=2025-08-01
 
 [Rewrite]
 # > 通用广告请求@ddgksf2013
-https?:\/\/vip1\.kuwo\.cn\/vip\/activity\/kwMemberDay - reject-200
+https?:\/\/vip1\.kuwo\.cn\/vip\/activity\/kwMemberDay reject-200
+https?:\/\/mc\.tencentmusic\.com\/sdk\/ad reject-200
 # > 屏蔽热词@ddgksf2013
-https?:\/\/hotword\.kuwo\.cn\/hotword\.s - reject-200
+https?:\/\/hotword\.kuwo\.cn\/hotword\.s reject-200
 # > 通用广告请求@ddgksf2013
-https?:\/\/vip1\.kuwo\.cn\/vip_adv\/ - reject-200
+https?:\/\/vip1\.kuwo\.cn\/vip_adv\/ reject-200
 # > 通用广告请求@ddgksf2013
-https?:\/\/wapi\.kuwo\.cn\/openapi\/v1\/app\/pasterAdvert - reject-200
+https?:\/\/wapi\.kuwo\.cn\/openapi\/v1\/app\/pasterAdvert reject-200
 # > 应用内弹窗及右下角@ddgksf2013
-^https?:\/\/mobilead\.kuwo\.cn\/ - reject-200
+^https?:\/\/mobilead\.kuwo\.cn\/ reject-200
+# > 开屏广告@ddgksf2013
+https?:\/\/rich\.kuwo\.cn\/AdService reject-200
 
 [Script]
 # > 搜索框处理@ddgksf2013
@@ -65,4 +68,4 @@ http-response ^https?:\/\/appi.kuwo.cn/kuwopay/personal/cells script-path=https:
 http-response ^https:\/\/[a-z0-9A-Z]+\.kuwo\.cn\/mobi\.s\?f=kwxs script-path=https://gist.githubusercontent.com/ddgksf2013/0f76e952f0c4a2579932f45a209b40c3/raw/mykkmusic.vip.js, requires-body=true, timeout=60, tag=音乐播放接口
 
 [MITM]
-hostname = *.kuwo.cn, *.lrts.me
+hostname = *.kuwo.cn, *.lrts.me, mc.tencentmusic.com
