@@ -8,4 +8,4 @@
 jinriyoujia = switch,false,tag=今日油价
 
 [Script]
-cron "7 7 7 ? * *" script-path=https://raw.githubusercontent.com/deezertidal/private/main/oil.js, timeout=10, tag=油价提醒, argument="浙江"
+cron "7 7 7 ? * *" script-path=https://raw.githubusercontent.com/deezertidal/private/main/oil.js, timeout=10, enable={jinriyoujia}, tag=油价提醒, argument="浙江"
