@@ -12,7 +12,6 @@
 [Argument]
 jinritianqi_enable = switch,true,false,tag=今日天气
 time = input,"17 7-19/4 * * *",tag=天气推送时间
-cityid = input,"101210306",tag=你的城市代码
 
 [Script]
-cron {time} script-path=https://whatshub.top/plugin/tianqi.js, timeout=10, tag=今日天气, argument={cityid},enable={jinritianqi_enable}
+cron {time} script-path=https://whatshub.top/plugin/tianqi.js, timeout=10, tag=今日天气, argument={101210306},enable={jinritianqi_enable}
