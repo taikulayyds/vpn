@@ -32,9 +32,9 @@ DOMAIN-SUFFIX,gdt.qq.com,REJECT
 DOMAIN-SUFFIX,e.qq.com,REJECT
 
 [Script]
-cron {time} script-path=https://raw.githubusercontent.com/Nathalie-Annis/Loon/refs/heads/main/Script/kugou_auto.js, enable={sign}, tag=酷狗领取VIP
+cron {time} script-path=https://raw.githubusercontent.com/taikulayyds/vpn/refs/heads/mina/Loon/kugou_auto.js, enable={sign}, tag=酷狗领取VIP
 
-http-request https://(gateway|gatewayretry|gateway3).kugou.com/youth/v1/(recharge/receive_vip_listen_song|activity/get_month_vip_record).* script-path=https://raw.githubusercontent.com/Nathalie-Annis/Loon/refs/heads/main/Script/kugou.js, enable={sign}, tag=酷狗数据
+http-request https://(gateway|gatewayretry|gateway3).kugou.com/youth/v1/(recharge/receive_vip_listen_song|activity/get_month_vip_record).* script-path=https://raw.githubusercontent.com/taikulayyds/vpn/refs/heads/mina/Loon/kugou.js, enable={sign}, tag=酷狗数据
 
 [MITM]
 hostname = *.kugou.com
