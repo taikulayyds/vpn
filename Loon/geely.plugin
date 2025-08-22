@@ -10,8 +10,9 @@
 #!date=2025-08-22
 
 [Argument]
-geely-cookie_enable = switch,true,false,tag=吉利汽车签到获取cookie,geely-qiandao_enable = switch,true,false,tag=吉利汽车每日签到,desc=
-time = input,"5 8 * * *",tag=每日签到时间,desc=
+geely-cookie_enable = switch,true,false,tag=吉利汽车签到获取cookie
+geely-qiandao_enable = switch,true,false,tag=吉利汽车每日签到
+time = input,"5 8 * * *",tag=每日签到时间
 
 [Script]
 http-response ^https?:\/\/app\.geely\.com\/my\/getMyCenterCounts$ script-path=https://raw.githubusercontent.com/wf021325/qx/master/task/geely.js, requires-body=true, timeout=60, tag=吉利汽车签到获取cookie,enable={geely-cookie_enable}

@@ -8,7 +8,8 @@
 #!date=2025-08-22
 
 [Argument]
-shuju = switch,false,tag=开启数据获取,sign = switch,false,tag=开启每日签到,desc=
+shuju = switch,false,tag=开启数据获取
+sign = switch,false,tag=开启每日签到
 time = input,"0 8 * * *",tag=每日签到时间
 
 [Rule]
