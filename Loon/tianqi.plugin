@@ -1,5 +1,6 @@
 #!name= 今日天气
 #!desc= 复制 cron "17 7-19/4 * * *" script-path=https://raw.githubusercontent.com/taikulayyds/vpn/refs/heads/mina/Loon/tianqi.js, timeout=10, tag=今日天气, argument="你的城市代码" 粘贴到配置文件[Script]，本插件仅是天气的示例，具体城市代码自行填写
+#!author=yfamily[https://raw.githubusercontent.com/taikulayyds/vpn/refs/heads/mina/Loon/tianqi.plugin]
 #!icon=https://github.com/taikulayyds/icon/raw/refs/heads/mina/tianqi.png
 #!homepage=https://whatshub.top
 
