@@ -15,6 +15,4 @@ time = input,"17 7-19/4 * * *",tag=天气推送时间
 cityid = input,"101******",tag=你的城市代码
 
 [Script]
-#复制 cron "17 7-19/4 * * *" script-path=https://whatshub.top/plugin/tianqi.js, timeout=10, tag=今日天气, argument="你的城市代码" 到配置文件[Script]，本插件仅是苏州天气的示例
-
 cron {time} script-path=https://whatshub.top/plugin/tianqi.js, timeout=10, tag=今日天气, argument={cityid},enable={jinritianqi_enable}
