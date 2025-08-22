@@ -7,16 +7,16 @@
 #!system_version=
 #!homepage=https://github.com/wf021325/qx
 #!icon=https://github.com/taikulayyds/icon/raw/refs/heads/mina/geely.png
-#!date=2025-04-30
+#!date=2025-08-22
 
 [Argument]
-sign = switch,false,tag=开启获取cookie,sign = switch,false,tag=开启每日签到,desc=
+geely-cookie_enable = switch,true,false,tag=吉利汽车签到获取cookie,geely-qiandao_enable = switch,true,false,tag=吉利汽车每日签到,desc=
 time = input,"5 8 * * *",tag=每日签到时间,desc=
 
 [Script]
-http-response ^https?:\/\/app\.geely\.com\/my\/getMyCenterCounts$ script-path=https://raw.githubusercontent.com/wf021325/qx/master/task/geely.js, enable={sign}, tag=吉利汽车签到获取cookie
+http-response ^https?:\/\/app\.geely\.com\/my\/getMyCenterCounts$ script-path=https://raw.githubusercontent.com/wf021325/qx/master/task/geely.js, requires-body=true, timeout=60, tag=吉利汽车签到获取cookie,enable={geely-cookie_enable}
 
-cron {time} script-path=https://raw.githubusercontent.com/wf021325/qx/master/task/geely.js, enable={sign}, tag=吉利汽车签到脚本
+cron {time} https://raw.githubusercontent.com/wf021325/qx/master/task/geely.js, timeout=120, tag=吉利汽车签到脚本,enable={geely-qiandao_enable}
 
 [MitM]
 hostname = app.geely.com

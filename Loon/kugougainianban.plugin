@@ -1,5 +1,5 @@
 #!name=酷狗概念版自动领取VIP--Eric
-#!desc=去除启动广告，每日自动领取VIP，第一次使用打开酷狗概念版天天签到领VIP页面获取参数，提示获取成功即可。
+#!desc=去除启动广告，每日自动领取VIP。首次使用需要开启数据获取，打开酷狗概念版天天签到领VIP页面获取参数，提示获取成功即可。
 #!openUrl=https://apps.apple.com/app/id1480205582
 #!author=Eric[https://raw.githubusercontent.com/Alex0510/Eric/master/surge/Module/kugou.sgmodule]
 #!system=
@@ -8,8 +8,8 @@
 #!date=2025-08-22
 
 [Argument]
-sign = switch,false,tag=开启每日签到,desc=
-time = input,"0 8 * * *",tag=每日签到时间,desc=
+shuju = switch,false,tag=开启数据获取,sign = switch,false,tag=开启每日签到,desc=
+time = input,"0 8 * * *",tag=每日签到时间
 
 [Rule]
 URL-REGEX,"https://gateway.kugou.com/ads.gateway/.*",REJECT
@@ -34,7 +34,7 @@ DOMAIN-SUFFIX,e.qq.com,REJECT
 [Script]
 cron {time} script-path=https://raw.githubusercontent.com/taikulayyds/vpn/refs/heads/mina/Loon/kugou_auto.js, enable={sign}, tag=酷狗领取VIP
 
-http-request https://(gateway|gatewayretry|gateway3).kugou.com/youth/v1/(recharge/receive_vip_listen_song|activity/get_month_vip_record).* script-path=https://raw.githubusercontent.com/taikulayyds/vpn/refs/heads/mina/Loon/kugou.js, enable={sign}, tag=酷狗数据
+http-request https://(gateway|gatewayretry|gateway3).kugou.com/youth/v1/(recharge/receive_vip_listen_song|activity/get_month_vip_record).* script-path=https://raw.githubusercontent.com/taikulayyds/vpn/refs/heads/mina/Loon/kugou.js, enable={shuju}, tag=酷狗数据
 
 [MITM]
 hostname = *.kugou.com
