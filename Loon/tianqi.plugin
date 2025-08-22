@@ -10,7 +10,7 @@
 #!date=2025-08-22
 
 [Argument]
-jinritianqi_enable} = switch,true,false,tag=今日天气
+jinritianqi_enable = switch,true,false,tag=今日天气
 time = input,"17 7-19/4 * * *",tag=天气推送时间
 cityid = input,"101******",tag=你的城市代码
 
