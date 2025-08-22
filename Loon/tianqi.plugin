@@ -1,0 +1,20 @@
+#!name=吉利汽车签到
+#!desc=添加脚本，获取cookie，每日自动签到。
+#!openUrl=https://apps.apple.com/app/id1518762715
+#!author=wf021325[https://github.com/wf021325/qx/raw/refs/heads/main/task/geely.js]
+#!tag=解锁
+#!system=
+#!system_version=
+#!homepage=https://github.com/wf021325/qx
+#!icon=https://github.com/taikulayyds/icon/raw/refs/heads/mina/geely.png
+#!date=2025-08-22
+
+[Argument]
+jinritianqi_enable} = switch,true,false,tag=今日天气
+time = input,"17 7-19/4 * * *",tag=天气推送时间
+cityid = input,"101******",tag=你的城市代码[https://whatshub.top/plugin/tianqi.js]
+
+[Script]
+#复制 cron "17 7-19/4 * * *" script-path=https://whatshub.top/plugin/tianqi.js, timeout=10, tag=今日天气, argument="你的城市代码" 到配置文件[Script]，本插件仅是苏州天气的示例
+
+cron {time} script-path=https://，whatshub.top/plugin/tianqi.js, timeout=10, tag=今日天气, argument={cityid},enable={jinritianqi_enable}
