@@ -2,12 +2,16 @@
  #!desc=打开软件后切换到个人页面出现会员Logo即可使用。它可以代替酷我音乐或者QQ音乐它的歌库还是挺多的。
  #!openUrl=https://apps.apple.com/app/id1541981555
  #!author=lOS-脚本研究院[https://raw.githubusercontent.com/WeiGiegie/666/main/bdyy.js]
- #!date=2025-08-26
+ #!date=2025-08-29
  #!homepage=https://github.com/WeiGiegie
  #!icon=https://github.com/taikulayyds/icon/raw/refs/heads/mina/bdyy.png
 
+
+ [Rewrite]
+ ^https://ad\.tencentmusic\.com/config/uni reject
+
  [Mitm]
- hostname = bd-api.kuwo.cn, *.kuwo.*
+ hostname = bd-api.kuwo.cn, *.kuwo.*, ad.tencentmusic.com
 
  [Script]
   # > 波点音乐 解锁VIP 最高音质 + 去广告1.会员特权解锁：会员logo，支持最高2000k FLAC音质，新增歌曲下载（当前下载功能为自慰）2.bug修复：修复此前需手动切换播放、MV自动播放错误等问题3.广告优化：去除banner广告（开屏广告暂未去除，非完美）4.个人页面减少修改，尊重用户体验5.后续计划：即将支持下载功能及数字专辑解锁….（https://t.me/GieGie777）
