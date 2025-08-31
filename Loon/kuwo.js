@@ -7,6 +7,7 @@
 #!openUrl = https://napi.ltd
 #!tag = 酷我音乐
 #!loon_version = 3.2.3(762)
+#!openUrl = https:/apps.apple.com/app/id588673713
 #!icon = https://static.napi.ltd/Image/KuWo.png
 #!date = 2025-08-29
 
