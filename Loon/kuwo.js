@@ -4,10 +4,9 @@
 #!desc = 〔 酷我音乐 〕全功能破解
 #!author = 影子[https://www.napi.ltd]
 #!homepage = https://napi.ltd
-#!openUrl = https://napi.ltd
+#!openUrl = https:/apps.apple.com/app/id588673713
 #!tag = 酷我音乐
 #!loon_version = 3.2.3(762)
-#!openUrl = https:/apps.apple.com/app/id588673713
 #!icon = https://static.napi.ltd/Image/KuWo.png
 #!date = 2025-08-29
 
