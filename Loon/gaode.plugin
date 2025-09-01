@@ -1,14 +1,17 @@
 #!name=高德地图净化[墨鱼版]
 #!desc=使用前请卸载高德地图，挂载脚本然后使用
 #!openUrl=https://apps.apple.com/app/id461703208
-#!author=ddgksf2013[https://raw.githubusercontent.com/ddgksf2013/Rewrite/master/AdBlock/Amap.conf]
+#!author=ddgksf2013[https://raw.githubusercontent.com/ddgksf2013/Rewrite/master/AdBlock/AmapAds.conf]
 #!homepage=https://github.com/ddgksf2013
 #!loon_version = 3.2.4(787)
 #!icon = https://github.com/taikulayyds/icon/raw/refs/heads/mina/gaode.png
-#!date = 2025-08-22
+#!date = 2025-08-30
 
 [Mitm]
-hostname = *.amap.com
+hostname = m5.amap.com, m5-zb.amap.com, center.amap.com
+
+[Rule]
+DOMAIN-SUFFIX,optimus-ads.amap.com,DIRECT
 
 [Rewrite]
 ^https?:\/\/.*\.amap\.com\/ws\/faas\/amap-navigation\/card-service-route-plan\? reject-dict
