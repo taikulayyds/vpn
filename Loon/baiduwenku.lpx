@@ -1,0 +1,14 @@
+#!name=百度文库☆解锁VIP文档阅读权限
+#!desc=QX转Loon，解锁VIP文档阅读权限,无效请删除
+#!openUrl=https://apps.apple.com/app/id426340811
+#!author=彭于晏💞[https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/bdwk.js]
+#!homepage=https://t.me/plus8889
+#!loon_version = 3.2.4(787)
+#!icon = https://github.com/taikulayyds/icon/raw/refs/heads/mina/baiduwenku.png
+#!date = 2025-05-16
+
+[Mitm]
+hostname = appwk.baidu.com
+
+[Script]
+http-response ^https:\/\/appwk\.baidu\.com\/naapi\/user\/getinfo script-path=https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/bdwk.js, requires-body=true, timeout=60, tag=解锁VIP文档阅读权限

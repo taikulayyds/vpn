@@ -1,0 +1,14 @@
+#!name=网页版123云盘增强[墨鱼版]
+#!desc=123云盘网页去广告+解除网页端流量1G下载限制，请单文件下载，不要文件夹或多文件下载
+#!author=ddgksf2013[https://raw.githubusercontent.com/ddgksf2013/Modules/main/123pan.webEnhance.sgmodule]
+#!homepage=https://github.com/ddgksf2013
+#!loon_version = 3.2.4(787)
+#!icon = https://github.com/taikulayyds/icon/raw/refs/heads/mina/123yunpan.png
+#!date = 2025-05-16
+
+[Mitm]
+hostname = www.123pan.com
+
+[Script]
+http-response ^https?:\/\/www\.123pan\.com\/s\/[0-9a-zA-Z=_/-]+\.html script-path=https://github.com/ddgksf2013/Scripts/raw/master/123pan.js, requires-body=true, timeout=60, tag=123云盘网页去广告
+http-request ^https?:\/\/www\.123pan\.com\/b\/api\/share\/download\/info script-path=https://github.com/ddgksf2013/Scripts/raw/master/123pan.js, timeout=60, tag=解除网页端流量1G下载限制

@@ -1,0 +1,14 @@
+#!name=GitHub429
+#!author=taikulayyds[https://github.com/taikulayyds]
+#!desc=解决GitHub速率限制导致更新资源返回429问题
+#!homepage=https://github.com/taikulayyds/vpn/tree/mina/Loon
+#!icon=https://github.com/taikulayyds/icon/raw/refs/heads/mina/GitHub.png
+#!date=2025-04-29
+
+[Rewrite]
+^https:\/\/github\.com\/ header-replace Accept-Language en-us
+^https:\/\/(raw|gist)\.githubusercontent\.com\/ header-replace Accept-Language en-us
+^https://.*\.githubusercontent\.com\/ header-replace Accept-Language en-us
+
+[Mitm]
+hostname = githubusercontent.com, github.com, raw.githubusercontent.com, gist.githubusercontent.com, *.githubusercontent.com

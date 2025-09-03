@@ -1,0 +1,16 @@
+#!name=一刻相册解锁VIP
+#!desc=非一次性解锁，每次使用需要先启用此插件，再进入应用方可解锁，解锁成功后支持版本升级。
+#!openUrl=https://apps.apple.com/app/id1467852587
+#!author=chxm1023[https://github.com/1074305015/chxm1023/raw/refs/heads/main/bdcloud.js]
+#!tag=解锁
+#!system=
+#!system_version=
+#!homepage=https://github.com/1074305015/chxm1023
+#!icon=https://github.com/taikulayyds/icon/raw/refs/heads/mina/yikexiangce.png
+#!date=2025-04-30
+
+[Script]
+http-response ^https?:\/\/pan\.baidu\.com\/(youai\/(user\/.+\/getminfo|membership\/.+\/adswitch)|(rest\/.+\/membership\/user|act\/.+\/(bchannel|welfare)\/list|api\/usercfg)) script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/bdcloud.js, requires-body=true, timeout=60, tag=一刻相册解锁VIP
+
+[MitM]
+hostname = pan.baidu.com

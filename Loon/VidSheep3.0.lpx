@@ -1,0 +1,15 @@
+ #!name=VidSheep3.0
+ #!desc=VidSheep由作者收集网络视频资源后重写出视频播放界面
+ #!author=Sheepfj[https://raw.githubusercontent.com/SheepFJ/VidSheep/refs/heads/main/VidSheep3.1/main/VidSheepLoon.js]
+ #!date=2025-06-09
+ #!openUrl=https://api.sheep.com/sheep/VidSheep/main
+ #!homepage=https://github.com/SheepFJ/VidSheep
+ #!icon=https://github.com/taikulayyds/icon/raw/refs/heads/mina/vidsheep.png
+
+ [Mitm]
+ hostname = api.sheep.com
+
+ [Script]
+ # >介绍：使用圈x及Loon实现的视频聚合
+（https://t.me/sheep_007xiaoyang）
+ http-response ^https:\/\/api\.sheep\.com\/sheep\/VidSheep\/ script-path=https://raw.githubusercontent.com/SheepFJ/VidSheep/refs/heads/main/VidSheep3.1/main/api.js, timeout=20, tag=VidSheep3.0

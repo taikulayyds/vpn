@@ -1,0 +1,21 @@
+#!name=贴吧去广告(>=iOS15)
+#!desc=加载本插件前,须同时加载对应的贴吧分流,否则不能完全去广告！功能: 开屏广告;推荐和吧内帖子列表的直播及广告;详情页直播/关联商品/广告;看图模式广告;首页和帖子详情页右下角悬浮广告;部分吧内的置顶/最新中间的广告/head图片广告/head直播
+#!openUrl=https://apps.apple.com/app/id477927812
+#!author=app2smile[https://github.com/app2smile]
+#!homepage=https://github.com/app2smile/rules
+#!system=>=iOS15
+#!loon_version=3.2.4(787)
+#!icon=https://github.com/taikulayyds/icon/raw/refs/heads/mina/tieba.png
+#!date=2025-05-15
+
+[Rule]
+DOMAIN,180.76.76.200,REJECT
+# no-resolve需在最后
+IP-CIDR,180.76.76.200/32,REJECT,no-resolve
+
+[Mitm]
+hostname = tiebac.baidu.com
+
+[Script]
+http-response ^http(s:\/\/tiebac|:\/\/c\.tieba)\.baidu\.com\/(c\/f\/(frs\/(page|threadlist|generalTabList)|pb\/page|excellent\/personalized)$|tiebaads\/commonbatch|c\/s\/sync$) script-path=https://raw.githubusercontent.com/app2smile/rules/master/js/tieba-json.js, requires-body=true, timeout=10, tag=贴吧json
+http-response ^http(s:\/\/tiebac|:\/\/c\.tieba)\.baidu\.com\/c\/f\/(frs\/(page|threadlist|generalTabList)|pb\/page|excellent\/personalized)\?cmd script-path=https://raw.githubusercontent.com/app2smile/rules/master/js/tieba-proto.js, requires-body=true, binary-body-mode=true, timeout=10, tag=贴吧proto

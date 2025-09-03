@@ -1,0 +1,14 @@
+ #!name=Xvideo社区
+ #!desc=解锁会员及金币视频
+ #!author=baby[https://raw.githubusercontent.com/Yu9191/Rewrite/refs/heads/main/xvideos.js]
+ #!date=2025-06-07
+ #!homepage=https://github.com/Yu9191
+ #!openUrl=https://dlqrowpypqqsg.cloudfront.net
+ #!icon=https://github.com/taikulayyds/icon/raw/refs/heads/mina/xvideo.png
+ 
+ [Mitm]
+ hostname = *.cloudfront.net
+
+ [Script]
+ # Xvideos解锁会员及金币视频
+ http-response ^https?:\/\/([a-z0-9-]+\.)*cloudfront\.net\/api\/app\/mine\/info script-path=https://raw.githubusercontent.com/Yu9191/Rewrite/refs/heads/main/xvideos.js, requires-body=true, timeout=60, tag=Xvideo社区

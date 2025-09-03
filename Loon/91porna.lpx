@@ -1,0 +1,14 @@
+ #!name=91porna
+ #!desc=全站去广告
+ #!author=baby[https://raw.githubusercontent.com/chmg2025/script/refs/heads/main/91porna.js]
+ #!date=2025-08-03
+ #!openUrl=https://91porna.com
+ #!homepage=https://github.com/Yu9191
+ #!icon=https://github.com/taikulayyds/icon/raw/refs/heads/mina/91porna.png
+
+ [Mitm]
+ hostname = 91porna.com
+
+ [Script]
+ # > 91porna,全站去广告（https://t.me/GithubYu9191）
+ http-response ^https?:\/\/(91porna\.com\/?|91porna\.com\/comic\/index\/(avdetail|detail)\?video_key=[^&]+.*|91porna\.com\/heiliao-chigua\/\d+|91porna\.com\/%E9%BB%91%E6%96%99%E5%90%83%E7%93%9C|91porna.com\/comic\/index\/video\?category=[^&]+.*|91porna.com\/comic\/index\/(postNovel|av)|91porna.com\/comic\/index\/novel\?id=[^&]+.*|91porna\.com\/comic\/av\/relvideo(\?.*)?)$ script-path=https://raw.githubusercontent.com/chmg2025/script/refs/heads/main/91porna.js, requires-body=true, timeout=60, tag=去广告
