@@ -1,5 +1,5 @@
 #!name=酷狗概念版自动领取VIP--Eric
-#!desc=去除启动广告，每日自动领取VIP。首次使用需要开启数据获取，打开酷狗概念版天天签到领VIP页面获取参数，提示获取成功即可。
+#!desc=酷狗概念版2.4.6版本专属，去除启动广告，每日自动领取VIP。首次使用需要开启数据获取，打开酷狗概念版天天签到领VIP页面获取参数，提示获取成功即可。
 #!openUrl=https://apps.apple.com/app/id1480205582
 #!author=Eric[https://raw.githubusercontent.com/Alex0510/Eric/master/surge/Module/kugou.sgmodule]
 #!system=
