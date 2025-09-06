@@ -1,0 +1,17 @@
+#!name=黑料不打烊
+#!desc=添加脚本，每日自动推送。
+#!openUrl=https://heiliao.com
+#!author=Yuheng0101[https://raw.githubusercontent.com/Yuheng0101/X/main/Tasks/hlbdy.js]
+#!tag=解锁
+#!system=
+#!system_version=
+#!homepage=https://github.com/Yuheng0101/X
+#!icon=https://github.com/taikulayyds/icon/raw/refs/heads/mina/hlbdy.png
+#!date=2025-09-06
+
+[Argument]
+hlbdy = switch,true,false,tag=每日推送开关
+time = input,"5 8 * * *",tag=每日推送时间
+
+[Script]
+cron {time} script-path=https://raw.githubusercontent.com/taikulayyds/vpn/refs/heads/mina/Loon/hlbdy.js, timeout=10, tag=黑料不打烊,enable={hlbdy} img-url=https://github.com/taikulayyds/icon/raw/refs/heads/mina/hlbdy.png
