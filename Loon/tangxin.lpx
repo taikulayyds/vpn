@@ -1,13 +1,13 @@
  #!name=糖心视频
  #!desc=VIP+付费视频解锁，无需登录！
  #!author=lOS-脚本研究院[https://raw.githubusercontent.com/WeiGiegie/666/main/sugar.js]
- #!date=2025-09-03
+ #!date=2025-09-06
  #!openUrl=https://txh066.com
  #!homepage=https://github.com/WeiGiegie
  #!icon=https://github.com/taikulayyds/icon/raw/refs/heads/mina/tangxin.png
 
  [Mitm]
- hostname = tx.*.com, tx.*.cn, txh057.com, txh*.com, txh066.com
+ tx.*.com, tx.*.cn, txh057.com, txh*.com, txh066.com
 
  [Script]
  # >糖心视频VIP+付费视频解锁。弹窗通知有限制同videoid地址一分钟内只弹一次为防止炸弹通知💣（https://t.me/GieGie777）
