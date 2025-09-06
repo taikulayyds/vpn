@@ -6,6 +6,6 @@
 #!date=2025-07-08
 #########################################
 
-http-request https://(gateway|gatewayretry|gateway3).kugou.com/youth/v1/(recharge/receive_vip_listen_song|activity/get_month_vip_record).* script-path=https://gist.githubusercontent.com/Alex0510/1c389019c264a7d3ddbe4dbcf77d4295/raw/kugou.js, timeout=20, tag=酷狗签到获取Cookie
+http-request https://(gateway|gatewayretry|gateway3).kugou.com/youth/v1/(recharge/receive_vip_listen_song|activity/get_month_vip_record).* script-path=https://raw.githubusercontent.com/taikulayyds/vpn/refs/heads/mina/Loon/kugou.js, timeout=20, tag=酷狗签到获取Cookie
 
-cron "10 0 * * *" script-path=https://gist.githubusercontent.com/Alex0510/1c389019c264a7d3ddbe4dbcf77d4295/raw/kugou_auto.js, timeout=300, tag=酷狗领取VIP
+cron "10 0 * * *" script-path=https://raw.githubusercontent.com/taikulayyds/vpn/refs/heads/mina/Loon/kugou_auto.js, timeout=300, tag=酷狗领取VIP
