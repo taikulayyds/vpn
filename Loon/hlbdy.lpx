@@ -14,4 +14,4 @@ hlbdy = switch,true,false,tag=每日推送开关
 time = input,"5 8 * * *",tag=每日推送时间
 
 [Script]
-cron {time} script-path=https://raw.githubusercontent.com/taikulayyds/vpn/refs/heads/mina/Loon/hlbdy.js, timeout=120, tag=黑料不打烊,enable={hlbdy}, img-url=https://github.com/taikulayyds/icon/raw/refs/heads/mina/hlbdy.png
+cron {time} script-path=https://raw.githubusercontent.com/taikulayyds/vpn/refs/heads/mina/Loon/hlbdy.js, timeout=60, tag=黑料不打烊,enable={hlbdy}, img-url=https://github.com/taikulayyds/icon/raw/refs/heads/mina/hlbdy.png
