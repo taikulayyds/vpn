@@ -1,18 +1,26 @@
  #!name=波点音乐-QQ音乐概念版
- #!desc=打开软件后切换到个人页面出现会员Logo即可使用。它可以代替酷我音乐或者QQ音乐它的歌库还是挺多的。
+ #!desc=会员调试 + 去广告 + 下载歌曲。打开软件后切换到个人页面出现会员Logo即可使用。它可以代替酷我音乐或者QQ音乐它的歌库还是挺多的。
  #!openUrl=https://apps.apple.com/app/id1541981555
  #!author=lOS-脚本研究院[https://raw.githubusercontent.com/WeiGiegie/666/main/bdyy.js]
- #!date=2025-08-29
+ #!date=2025-09-06
  #!homepage=https://github.com/WeiGiegie
  #!icon=https://github.com/taikulayyds/icon/raw/refs/heads/mina/bdyy.png
 
-
  [Rewrite]
+ # > 开屏AD&其它广告？(以下数据来自“广告必须死”频道分享)
  ^https://ad\.tencentmusic\.com/config/uni reject
+ # 移除波点音乐我的页面广告banner
+ ^https:\/\/bd-api\.kuwo\.cn\/api\/service\/banner\/positions\? reject-dict
+ # 移除搜索框热搜
+ ^https:\/\/bd-api\.kuwo\.cn\/api\/search\/topic\/word\/list\? reject-dict
 
  [Mitm]
- hostname = bd-api.kuwo.cn, *.kuwo.*, ad.tencentmusic.com
+ hostname = bd-api.kuwo.cn, *.kuwo.*, ad.tencentmusic.com, *.l.qq.com
 
  [Script]
-  # > 波点音乐 解锁VIP 最高音质 + 去广告1.会员特权解锁：会员logo，支持最高2000k FLAC音质，新增歌曲下载（当前下载功能为自慰）2.bug修复：修复此前需手动切换播放、MV自动播放错误等问题3.广告优化：去除banner广告（开屏广告暂未去除，非完美）4.个人页面减少修改，尊重用户体验5.后续计划：即将支持下载功能及数字专辑解锁….（https://t.me/GieGie777）
- http-response ^https?:\/\/bd-api\.kuwo\.cn\/api\/(ucenter\/users\/pub|play\/music\/v2\/(audioUrl|checkRight)|service\/home\/module|pay\/vip\/lowPriceText) script-path=https://raw.githubusercontent.com/WeiGiegie/666/main/bdyy.js, requires-body=true, timeout=60, tag=波点音乐
+ # > 波点音乐 会员调试 + 去广告 + 下载功能。
+ 1. 新增下载功能 : 默认下载 320kbps 音质歌曲，支持播放和离线保存。
+ 2. 会员特权调试 : VIP 数据更稳定，不再依赖个人页面加载权限，告别听歌无权限问题。
+ 3. 开屏广告去除 : 针对腾讯系广告 SDK，完整处理广告开关，它不是拒绝请求，还保证返回的 JSON 结构完整。
+ 4. 后续计划 : 当前脚本已非常完善，优化体验为主，持续关注性能与兼容性。（https://t.me/GieGie777）
+ http-response ^https?:\/\/(bd-api\.kuwo\.cn\/api\/(ucenter\/users\/(pub|login)|play\/music\/v2\/(audioUrl|checkRight)|service\/(home\/module|music\/download\/info|global/config\/scene)|pay\/vip\/lowPriceText)|us\.l\.qq\.com\/exapp\?adposcount) script-path=https://raw.githubusercontent.com/WeiGiegie/666/main/bdyy.js, requires-body=true, timeout=60, tag=波点音乐
