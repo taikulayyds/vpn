@@ -9,6 +9,3 @@
 
 [Script]
 http-response https://note.youdao.com/yws/(mapi/payment|api/self) script-path= https://raw.githubusercontent.com/TomChian/Alex0510--surge/refs/heads/master/Script/ydybj.js, requires-body=true, timeout=20, tag=有道云笔记
-
-[MitM]
-hostname: note.youdao.com
