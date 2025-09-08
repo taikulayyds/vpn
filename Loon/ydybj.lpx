@@ -1,0 +1,13 @@
+#!name=有道云笔记
+
+#!desc=有道云笔记VIP
+
+#!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/ydybj.png
+
+#!homepage=https://github.com/TomChian/Alex0510--surge/tree/master
+
+#!author=Alex0510［https://github.com/TomChian］
+
+[Script]
+
+http-response https://note.youdao.com/yws/(mapi/payment|api/self) script-path= https://raw.githubusercontent.com/TomChian/Alex0510--surge/refs/heads/master/Script/ydybj.js, requires-body=true, timeout=20, tag=有道云笔记
