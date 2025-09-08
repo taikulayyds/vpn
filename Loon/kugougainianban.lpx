@@ -12,6 +12,10 @@ shuju = switch,false,tag=开启数据获取
 sign = switch,false,tag=开启每日签到
 time = input,"0 8 * * *",tag=每日签到时间
 
+[Rewrite]
+^https?:\/\/gateway\.kugou\.com\/(youth\/v\d\/(ad\/play_status.+|start_img\/get_set|ab\/tmeab.+)|ads.+) reject-dict
+^https?:\/\/adsfileretry\.service\.kugou\.com reject-dict
+
 [Rule]
 URL-REGEX,"https://gateway.kugou.com/ads.gateway/.*",REJECT
 URL-REGEX,"https://gateway3.kugou.com/ads.gateway/.*",REJECT
@@ -38,4 +42,4 @@ cron {time} script-path=https://raw.githubusercontent.com/taikulayyds/vpn/refs/h
 http-request https://(gateway|gatewayretry|gateway3).kugou.com/youth/v1/(recharge/receive_vip_listen_song|activity/get_month_vip_record).* script-path=https://raw.githubusercontent.com/taikulayyds/vpn/refs/heads/mina/Loon/kugou.js, enable={shuju}, tag=酷狗数据
 
 [MITM]
-hostname = *.kugou.com
+hostname = *.kugou.com, adsfileretry.service.kugou.com, gateway.kugou.com
