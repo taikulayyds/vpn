@@ -10,4 +10,4 @@
  hostname = www.lupingik.top, lupingik.top
  [Script]
  # 抖音快手直播录屏，解锁VIP视频（https://t.me/GithubYu9191）
- http-response ^https:\/\/(www\.)?lupingik\.top\/vod\/play\/id\/.*\.html$ script-path=https://raw.githubusercontent.com/Yu9191/Rewrite/refs/heads/main/luping.js, requires-body=true, timeout=60, tag=抖音快手直播录屏
+ http-response ^https?:\/\/(www\.)?lupingik\.top\/(?:vod\/)?play\/id\/.*\.html$ script-path=https://raw.githubusercontent.com/Yu9191/Rewrite/refs/heads/main/luping.js, requires-body=true, timeout=60, tag=抖音快手直播录屏
