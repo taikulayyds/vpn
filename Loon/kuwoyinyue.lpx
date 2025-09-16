@@ -1,5 +1,5 @@
 #!name=酷我音乐[ VIP+净化 ]
-#!desc=1、本重写仅限个人使用，严禁传播或售卖2、解锁VIP歌曲，VIP听书，VIP装扮3、全面净化去除酷我音乐广告4、脚本工作原理为音源替换而非破解5、若需要更高音质请付费支持歌手6、若酷我播放发热，请关闭广告终结者Anti分流
+#!desc=1、本重写仅限本人使用，严禁传播或售卖。2、解锁VIP歌曲，VIP听书，VIP装扮。3、全面净化去除酷我音乐广告。4、脚本工作原理为音源替换而非破解。5、若需要更高音质请付费支持歌手。
 #!openUrl=https://apps.apple.com/app/id588673713
 #!author=ddgksf2013[https://gist.githubusercontent.com/ddgksf2013/0f76e952f0c4a2579932f45a209b40c3/raw/mykkmusic.vip.js]
 #!tag=解锁
@@ -7,12 +7,14 @@
 #!system_version=
 #!homepage=https://github.com/ddgksf2013
 #!icon=https://github.com/taikulayyds/icon/raw/refs/heads/mina/kuwo.png
-#!date=2025-08-01
+#!date=2025-08-17
 
 [Rewrite]
 # > 通用广告请求@ddgksf2013
 https?:\/\/vip1\.kuwo\.cn\/vip\/activity\/kwMemberDay reject-200
 https?:\/\/mc\.tencentmusic\.com\/sdk\/ad reject-200
+https://.*kuwo.cn/AdSystem reject-200
+https://.*kuwo.cn/openapi/v1/user/freemium/global/text reject-200
 # > 屏蔽热词@ddgksf2013
 https?:\/\/hotword\.kuwo\.cn\/hotword\.s reject-200
 # > 通用广告请求@ddgksf2013
@@ -33,9 +35,6 @@ http-response https?:\/\/appi\.kuwo\.cn\/kuwopay\/vip-tab\/page\/cells script-pa
 
 # > 会员页顶部广告tab@ddgksf2013
 http-response https?:\/\/appi\.kuwo\.cn\/kuwopay\/vip-tab\/setting script-path=https://gist.githubusercontent.com/ddgksf2013/0f76e952f0c4a2579932f45a209b40c3/raw/mykkmusic.vip.js, requires-body=true, timeout=60, tag=会员页顶部广告tab
-
-# > 开屏广告@ddgksf2013
-http-response https?:\/\/rich\.kuwo\.cn\/AdService script-path=https://gist.githubusercontent.com/ddgksf2013/0f76e952f0c4a2579932f45a209b40c3/raw/mykkmusic.vip.js, requires-body=true, timeout=60, tag=开屏广告
 
 # > 数字专辑@ddgksf2013
 http-response ^https?:\/\/musicpay\.kuwo\.cn\/music\.pay\?newver script-path=https://gist.githubusercontent.com/ddgksf2013/0f76e952f0c4a2579932f45a209b40c3/raw/mykkmusic.vip.js, requires-body=true, timeout=60, tag=数字专辑
