@@ -3,9 +3,9 @@
 #!author = Tartarus2014[https://raw.githubusercontent.com/Tartarus2014/For-own-use/refs/heads/master/Loon/Plugin/FKTG.lpx]
 #!system = iOS,iPadOS,tvOS,macOS
 #!system_version = 
- #!homepage=https://github.com/Tartarus2014
+#!homepage=https://github.com/Tartarus2014
 #!loon_version = 3.3.4(895)
-#!icon: https://github.com/taikulayyds/icon/raw/refs/heads/mina/Telegram.png
+#!icon=https://github.com/taikulayyds/icon/raw/refs/heads/mina/Telegram.png
 
 [Host]
 # Fuck Telegram bad ips
