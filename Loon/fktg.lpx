@@ -1,0 +1,27 @@
+#!name = Fuck Telegram bad IPs
+#!desc = 将 tg 的垃圾 IP 转移到好的 IP 上
+#!author = Tartarus2014[https://raw.githubusercontent.com/Tartarus2014/For-own-use/refs/heads/master/Loon/Plugin/FKTG.lpx]
+#!system = iOS,iPadOS,tvOS,macOS
+#!system_version = 
+ #!homepage=https://github.com/Tartarus2014
+#!loon_version = 3.3.4(895)
+#!icon: https://github.com/taikulayyds/icon/raw/refs/heads/mina/Telegram.png
+
+[Host]
+# Fuck Telegram bad ips
+91.108.56.100 = 91.108.56.147, use-in-proxy=true
+91.108.56.101 = 91.108.56.147, use-in-proxy=true
+91.108.56.104 = 91.108.56.147, use-in-proxy=true
+91.108.56.107 = 91.108.56.147, use-in-proxy=true
+91.108.56.109 = 91.108.56.147, use-in-proxy=true
+91.108.56.110 = 91.108.56.147, use-in-proxy=true
+91.108.56.113 = 91.108.56.147, use-in-proxy=true
+91.108.56.120 = 91.108.56.147, use-in-proxy=true
+91.108.56.125 = 91.108.56.147, use-in-proxy=true
+91.108.56.126 = 91.108.56.147, use-in-proxy=true
+91.108.56.128 = 91.108.56.147, use-in-proxy=true
+91.108.56.134 = 91.108.56.147, use-in-proxy=true
+91.108.56.138 = 91.108.56.147, use-in-proxy=true
+91.108.56.143 = 91.108.56.147, use-in-proxy=true
+91.108.56.145 = 91.108.56.147, use-in-proxy=true
+91.108.56.156 = 91.108.56.147, use-in-proxy=true
