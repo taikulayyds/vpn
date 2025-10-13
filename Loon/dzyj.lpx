@@ -1,0 +1,27 @@
+#!name=地震预警解锁SVIP
+#!desc=非一次性解锁，每次使用需要先启用此插件，再进入应用方可解锁，解锁成功后支持版本升级。
+#!openUrl=https://apps.apple.com/app/id713947342
+#!author=baby[https://raw.githubusercontent.com/Yu9191/Rewrite/refs/heads/main/dzyj.js]
+#!tag=解锁
+#!system=
+#!system_version=
+#!homepage=https://github.com/Yu9191
+#!icon=https://github.com/taikulayyds/icon/raw/refs/heads/mina/dizhenyujing.png
+#!date=2025-10-13
+
+[Script]
+http-response https://mobile-new.chinaeew.cn/v1/order/apple/vip script-path=https://raw.githubusercontent.com/Yu9191/Rewrite/refs/heads/main/dzyj.js, requires-body=true, timeout=60, tag=地震预警解锁SVIP
+
+[MitM]
+hostname = mobile-new.chinaeew.cn
+
+
+let obj = JSON.parse($response.body);
+obj.data = {
+  "productName" : "SVIP",
+  "endTime" : 4791705729000,
+  "vipType" : "svip",
+  "productId" : "earthquake_early_warning_SVIP",
+  "upgradePrice" : 0
+};
+$done({ body: JSON.stringify(obj) });
