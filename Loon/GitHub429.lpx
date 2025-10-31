@@ -12,4 +12,5 @@
 ^https:\/\/(raw|gist)\.githubusercontent\.com\/ header-replace Accept-Language en-us
 
 [Mitm]
-hostname = githubusercontent.com, github.com, raw.githubusercontent.com, gist.githubusercontent.com, *.githubusercontent.com
+hostname = github.com, githubusercontent.com, *.githubusercontent.com,
+raw.githubusercontent.com, gist.githubusercontent.com
