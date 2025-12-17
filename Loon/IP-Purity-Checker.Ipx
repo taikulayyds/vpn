@@ -1,0 +1,16 @@
+#!name=落地IP纯净度查询
+#!desc=适用于Loon的节点检测工具，可进行落地IP纯净度查询。请在所有节点页面选择一个节点长按，出现菜单后进行测试。
+#!author=AkimioJR[https://github.com/AkimioJR]
+#!tag=节点检测
+#!system=
+#!system_version=
+#!loon_version=3.3.7(787)
+#!homepage=
+#!icon=https://raw.githubusercontent.com/luestr/IconResource/main/Other_icon/120px/Node_detection_tool.png
+#!date=2025-12-16 00:48:39
+
+[Argument]
+IPPURE_API_URL = input, "https://my.ippure.com/v1/info", tag=IP纯净度检测API地址, desc=自定义IP纯净度检测API地址，默认使用 https://my.ippure.com/v1/info
+
+[Script]
+generic script-path=https://github.com/taikulayyds/vpn/raw/refs/heads/mina/Loon/IP-Purity-Check.js, timeout=10, tag=落地IP纯净度检测, img-url=info.circle, argument=[{IPPURE_API_URL}]
