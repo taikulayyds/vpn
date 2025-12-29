@@ -12,6 +12,6 @@ hostname = api.apubis.com, api.pjq6he.com, api.zbdk8ws.com, api.f38khx.com, api.
  [Script]
  # > One·一个,先登录再开启，解锁所有内容(包含点播付费), 去除广告（https://t.me/GithubYu9191）
  # 广告
-http-response ^https?:\/\/(api|jmtp)(.*-uat)?\.\w+\.com\/v2.5\/(bootstrap|user\/login|user\/avatarFrame|article\/discovery|navigation|ad\/space|my\/userExtraInfo) script-path=https://raw.githubusercontent.com/Yu9191/Rewrite/refs/heads/main/One.js, requires-body=true, timeout=60, tag=One·去广告
+http-response ^https?:\/\/(api|jmtp)(.*-uat)?\.\w+\.com\/v2.5\/(bootstrap|user\/login|user\/avatarFrame|article\/discovery|navigation|ad\/space|my\/userExtraInfo) script-path=https://raw.githubusercontent.com/Yu9191/Rewrite/refs/heads/main/One1222.js, requires-body=true, timeout=60, tag=One·去广告
  # 解锁
-http-response ^https?:\/\/(api|jmtp)(.*-uat)?\.\w+\.com\/v2.5\/(article\/detail) script-path=https://raw.githubusercontent.com/Yu9191/Rewrite/refs/heads/main/One.js, requires-body=true, timeout=60, tag=One·解锁
+http-request ^https?:\/\/(api|jmtp)(.*-uat)?\.\w+\.com\/v2.5\/(article\/detail) script-path=https://raw.githubusercontent.com/Yu9191/Rewrite/refs/heads/main/One1222.js, timeout=60, tag=One·解锁
