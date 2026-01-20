@@ -1,27 +1,17 @@
-#!name=百度网盘净化[墨鱼版]
-#!desc=墨鱼自用百度网盘去广告脚本
+#!name=百度网盘解锁
+#!desc=在线画质清晰度、体验解锁下载速度
 #!openUrl=https://apps.apple.com/app/id547166701
-#!author=ddgksf2013[https://gist.githubusercontent.com/ddgksf2013/f43026707830c7818ee3ba624e383c8d/raw/baiduCloud.adblock.js]
-#!homepage=https://github.com/ddgksf2013
-#!loon_version = 3.2.4(787)
+#!author=lOS-脚本研究院[https://raw.githubusercontent.com/WeiGiegie/666/main/panda.js]
+#!homepage=https://github.com/WeiGiegie
+#!loon_version = 3.3.7(921)
 #!icon = https://github.com/taikulayyds/icon/raw/refs/heads/mina/baiduwangpan.png
-#!date = 2025-05-16
+#!date = 2025-09-13
 
 [Mitm]
-hostname = pan.baidu.com, afd.baidu.com
-
-[Rewrite]
-^https?:\/\/.*baidu\.com\/rest\/.*\/membership\/proxy\/guide reject-200
-^https?:\/\/pan\.baidu\.com\/act\/v\d\/(bchannel|welfare)\/list reject-200
-^https?:\/\/pan\.baidu\.com\/rest\/.*\/pcs\/ad reject-200
-^https?:\/\/pan\.baidu\.com\/act\/api\/activityentry reject-200
-^https:\/\/pan\.baidu\.com\/feed\/hotlist reject-200
-^https?:\/\/.*zhangyuyidong\.cn\/api\/zysdk reject-200
-^https:\/\/pan\.baidu\.com\/queryintent\/queryhint reject-200
-^https:\/\/pan\.baidu\.com\/coins\/center\/notice reject-200
+hostname = pan.baidu.com, *.pcs.baidu.com, *.baidu.com
 
 [Script]
-http-response ^https?:\/\/pan\.baidu\.com\/api\/getsyscfg script-path=https://gist.githubusercontent.com/ddgksf2013/f43026707830c7818ee3ba624e383c8d/raw/baiduCloud.adblock.js, requires-body=true, timeout=60, tag=百度网盘_开屏广告
-http-response ^https?:\/\/afd\.baidu\.com\/afd\/entry script-path=https://gist.githubusercontent.com/ddgksf2013/f43026707830c7818ee3ba624e383c8d/raw/baiduCloud.adblock.js, requires-body=true, timeout=60, tag=百度网盘_广告推广
-http-response ^https:\/\/pan\.baidu\.com\/rest\/.*\/membership\/user\?method=gamecenter script-path=https://gist.githubusercontent.com/ddgksf2013/f43026707830c7818ee3ba624e383c8d/raw/baiduCloud.adblock.js, requires-body=true, timeout=60, tag=百度网盘_游戏广告
-http-response ^https:\/\/pan\.baidu\.com\/feed\/cardinfos script-path=https://gist.githubusercontent.com/ddgksf2013/f43026707830c7818ee3ba624e383c8d/raw/baiduCloud.adblock.js, requires-body=true, timeout=60, tag=百度网盘_首页信息流
+# > 百度网盘、在线画质清晰度、体验解锁下载速度
+# > 电报频道：https://t.me/GieGie777
+# > 使用声明：此脚本仅供学习与交流，请在下载使用24小时内删除！请勿在中国大陆转载与贩卖！
+http-response ^https?:\/\/pan\.baidu\.com.+(rest\/.+\/membership\/user|api\/user\/getinfo)\? script-path=https://raw.githubusercontent.com/WeiGiegie/666/main/panda.js, requires-body=true, timeout=60, tag=百度网盘解锁
