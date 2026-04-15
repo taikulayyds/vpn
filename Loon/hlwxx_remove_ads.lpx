@@ -14,4 +14,4 @@
  hostname = *.hlwxx.com, *.hlcx16.com, stats.kwvprfcr.xyz, mc.yandex.ru,hlwxx.com
 
  [Script]
- http-response ^https?:\/\/(?:www\.)?hl(?:wxx|cx\d*)\.com\/(?:$|\?|archives\/|category\/|memora|search|index\.htm) script-path=https://raw.githubusercontent.com/ZenmoFeiShi/Qx/refs/heads/main/hlwxx_remove_ads.js, requires-body=true, timeout=60, tag=黑料纯享版去广告
+ http-response ^https?:\/\/(?:www\.)?hl(?:wxx|cx\d*)\.com\/(?:$|\?|archives\/|category\/|memora|search|index\.htm) script-path=https://github.com/taikulayyds/vpn/raw/refs/heads/mina/Loon/hlwxx_remove_ads.js, requires-body=true, timeout=60, tag=黑料纯享版去广告
