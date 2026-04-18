@@ -15,6 +15,4 @@
  hostname = *heiliao*, *hlwxx*, *hlcx*, stats.kwvprfcr.xyz, mc.yandex.ru, api1.cghhqca.cc
 
  [Script]
- http-request ^https?:\/\/(?:www\.)?(?:heiliao|hlwxx|hlcx\d*)\.com\/(?!static\/|favicon|api\/|index\/statistics|uploads\/) script-path=https://raw.githubusercontent.com/taikulayyds/vpn/refs/heads/mina/Loon/replace-header.js, timeout=30, tag=修改请求头（黑料网去广告）
-
  http-response ^https?:\/\/(?:www\.)?(?:heiliao|hlwxx|hlcx\d*)\.com\/(?!static\/|favicon|api\/|index\/statistics|uploads\/) script-path=https://github.com/taikulayyds/vpn/raw/refs/heads/mina/Loon/hlwxx_remove_ads.js, requires-body=true, timeout=60, tag=黑料网去广告
