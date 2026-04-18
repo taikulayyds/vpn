@@ -1,17 +1,18 @@
- #!name=黑料纯享版净化
+ #!name=黑料网净化
  #!desc=黑料网，去恶心的开屏，首页各种乱七八糟的玩意。
  #!author=ZenmoFeiShi[https://raw.githubusercontent.com/ZenmoFeiShi/Qx/refs/heads/main/hlwxx_remove_ads.snippet]
  #!date=2025-04-14
- #!openUrl=https://www.hlwxx.com
+ #!openUrl=https://www.hlwxx.com，https://heiliao.com
  #!homepage=https://github.com/ZenmoFeiShi
  #!icon=https://github.com/taikulayyds/icon/raw/refs/heads/mina/hlbdy.png
 
  [Rewrite]
  ^https?:\/\/stats\.kwvprfcr\.xyz reject
  ^https?:\/\/mc\.yandex\.ru reject
+ ^https?:\/\/api1\.cghhqca\.cc\/api\/eventTracking reject-dict
 
  [Mitm]
- hostname = *.hlwxx.com, *.hlcx16.com, stats.kwvprfcr.xyz, mc.yandex.ru,hlwxx.com
+ hostname = *heiliao*, *hlwxx*, *hlcx*, stats.kwvprfcr.xyz, mc.yandex.ru, api1.cghhqca.cc
 
  [Script]
- http-response ^https?:\/\/(?:www\.)?hl(?:wxx|cx\d*)\.com\/(?:$|\?|archives\/|category\/|memora|search|index\.htm) script-path=https://github.com/taikulayyds/vpn/raw/refs/heads/mina/Loon/hlwxx_remove_ads.js, requires-body=true, timeout=60, tag=黑料纯享版去广告
+ http-response ^https?:\/\/(?:www\.)?hl(?:wxx|cx\d*)\.com\/(?:$|\?|archives\/|category\/|memora|search|index\.htm) script-path=https://github.com/taikulayyds/vpn/raw/refs/heads/mina/Loon/hlwxx_remove_ads.js, requires-body=true, timeout=60, tag=黑料网去广告
