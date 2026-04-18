@@ -31,9 +31,7 @@
  hostname = api.ainitpz.com, api.4hnovel.com, api.1000gxf.com, rg829.8f3m24.com, api.5fcgcnn.com, api.hpdgjnf.com, api.wyw68fg.com, api.hpfcqfh.com, api.dzjxekd.com, api.qxutcee.com, api.fkkejucm.com, api.sh75d6qk.com, api.gq89em.com, api.chgjaq4.com, api.cbvbqtz.com, api.gdj2a3qy.com, api.7gmsut2m.com, api.4hnovel.com, gzapi.*.com, jk.*.com
 
  [Script]
- http-response ^https?:\/\/api\.(ainitpz|4hnovel|1000gxf)\.com\/App\/Resource\/Config\/getNav script-path=https://raw.githubusercontent.com/ZenmoFeiShi/Qx/refs/heads/main/TilingSales_getNav.js, requires-body=true, timeout=60, tag=瓜子影视净化
- http-response ^https?:\/\/api\.(ainitpz|4hnovel|1000gxf)\.com\/App\/Ad\/barsPlayAdInfo script-path=https://raw.githubusercontent.com/ZenmoFeiShi/Qx/refs/heads/main/TilingSales_getNav.js, requires-body=true, timeout=60, tag=瓜子影视净化
- http-response ^https?:\/\/api\.(ainitpz|4hnovel|1000gxf)\.com\/App\/Ad\/playAdInfo script-path=https://raw.githubusercontent.com/ZenmoFeiShi/Qx/refs/heads/main/TilingSales_getNav.js, requires-body=true, timeout=60, tag=瓜子影视净化
- http-response ^https?:\/\/api\.(ainitpz|4hnovel|1000gxf)\.com\/App\/IndexPlay\/vodAdvertisement script-path=https://raw.githubusercontent.com/ZenmoFeiShi/Qx/refs/heads/main/TilingSales_getNav.js, requires-body=true, timeout=60, tag=瓜子影视净化
- http-response ^https?:\/\/api\.(ainitpz|4hnovel|1000gxf)\.com\/App\/Resource\/Vod\/showOne script-path=https://raw.githubusercontent.com/ZenmoFeiShi/Qx/refs/heads/main/TilingSales_getNav.js, requires-body=true, timeout=60, tag=瓜子影视净化
- http-response ^https?:\/\/api\.(ainitpz|4hnovel|1000gxf)\.com\/App\/Resource\/Vod\/vurlDetail script-path=https://raw.githubusercontent.com/ZenmoFeiShi/Qx/refs/heads/main/TilingSales_getNav.js, requires-body=true, timeout=60, tag=瓜子影视净化
+ http-response ^https?:\/\/api\.(ainitpz|4hnovel|1000gxf)\.com\/App\/Ad\/barsPlayAdInfo script-path=https://raw.githubusercontent.com/ZenmoFeiShi/Qx/refs/heads/main/TilingSales_getNav.js, requires-body=true, timeout=60, tag=瓜子影视净化1
+ http-response ^https?:\/\/api\.(ainitpz|4hnovel|1000gxf)\.com\/App\/IndexPlay\/vodAdvertisement script-path=https://raw.githubusercontent.com/ZenmoFeiShi/Qx/refs/heads/main/TilingSales_getNav.js, requires-body=true, timeout=60, tag=瓜子影视净化2
+ http-response ^https?:\/\/api\.(ainitpz|4hnovel|1000gxf)\.com\/App\/Resource\/Vod\/showOne script-path=https://raw.githubusercontent.com/ZenmoFeiShi/Qx/refs/heads/main/TilingSales_getNav.js, requires-body=true, timeout=60, tag=瓜子影视净化3
+ http-response ^https?:\/\/api\.(ainitpz|4hnovel|1000gxf)\.com\/App\/Resource\/Vod\/vurlDetail script-path=https://raw.githubusercontent.com/ZenmoFeiShi/Qx/refs/heads/main/TilingSales_getNav.js, requires-body=true, timeout=60, tag=瓜子影视净化4
