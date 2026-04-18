@@ -2,8 +2,7 @@
  #!desc=黑料网，去恶心的开屏，首页各种乱七八糟的玩意。
  #!author=ZenmoFeiShi[https://raw.githubusercontent.com/ZenmoFeiShi/Qx/refs/heads/main/hlwxx_remove_ads.snippet]
  #!date=2025-04-18
- #!openUrl=https://www.hlwxx.com，
-https://heiliao.com
+ #!openUrl=https://www.hlwxx.com，https://heiliao.com
  #!homepage=https://github.com/ZenmoFeiShi
  #!icon=https://github.com/taikulayyds/icon/raw/refs/heads/mina/hlbdy.png
 
@@ -16,6 +15,6 @@ https://heiliao.com
  hostname = *heiliao*, *hlwxx*, *hlcx*, stats.kwvprfcr.xyz, mc.yandex.ru, api1.cghhqca.cc
 
  [Script]
- http-request ^https?:\/\/(?:www\.)?(?:heiliao|hlwxx|hlcx\d*)\.com\/(?!static\/|favicon|api\/|index\/statistics|uploads\/) script-path=https://raw.githubusercontent.com/taikulayyds/vpn/refs/heads/mina/Loon/replace-header.js, timeout=30, tag=replaceHeader, argument="(%5Cr%5Cn)Accept-Encoding%3A.%2B(%5Cr%5Cn)-%3E%241Accept-Encoding%3A%20identity%242"
+ http-request ^https?:\/\/(?:www\.)?(?:heiliao|hlwxx|hlcx\d*)\.com\/(?!static\/|favicon|api\/|index\/statistics|uploads\/) script-path=https://raw.githubusercontent.com/taikulayyds/vpn/refs/heads/mina/Loon/replace-header.js, timeout=30, tag=修改请求头（黑料网去广告）
 
- http-response ^https?:\/\/(?:www\.)?hl(?:wxx|cx\d*)\.com\/(?:$|\?|archives\/|category\/|memora|search|index\.htm) script-path=https://github.com/taikulayyds/vpn/raw/refs/heads/mina/Loon/hlwxx_remove_ads.js, requires-body=true, timeout=60, tag=黑料网去广告
+ http-response ^https?:\/\/(?:www\.)?(?:heiliao|hlwxx|hlcx\d*)\.com\/(?!static\/|favicon|api\/|index\/statistics|uploads\/) script-path=https://github.com/taikulayyds/vpn/raw/refs/heads/mina/Loon/hlwxx_remove_ads.js, requires-body=true, timeout=60, tag=黑料网去广告
