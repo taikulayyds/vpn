@@ -1,0 +1,39 @@
+ #!name=瓜子影视净化
+ #!desc=去开屏、发现页2连续弹窗、首页顶部广告、视频播放前广告、评论区广告、强制播放会员最高画质、去除多余底部tap净化心灵，使其保持纯洁无污染❤️
+ #!author=ZenmoFeiShi[https://raw.githubusercontent.com/ZenmoFeiShi/Qx/refs/heads/main/TilingSales_ad_remove.snippet]
+ #!date=2025-04-19
+ #!openUrl=https://wvelcrona.com/
+ #!homepage=https://github.com/ZenmoFeiShi
+ #!icon=https://github.com/taikulayyds/icon/raw/refs/heads/mina/guazi.png
+
+ [Rewrite]
+ ^https?:\/\/api\.(ainitpz|4hnovel|1000gxf)\.com\/App\/Ad\/splashInfo reject-dict
+ ^https?:\/\/api\.(ainitpz|4hnovel|1000gxf)\.com\/App\/Ad\/noticeInfo reject-dict
+ ^https?:\/\/api\.(ainitpz|4hnovel|1000gxf)\.com\/App\/IndexList\/homeFloatAd reject-dict
+ ^https?:\/\/api\.(ainitpz|4hnovel|1000gxf)\.com\/App\/Ad\/activityInfo reject-dict
+ ^https?:\/\/api\.(ainitpz|4hnovel|1000gxf)\.com\/App\/Ad\/skitAdInfo reject-dict
+ ^https?:\/\/api\.(ainitpz|4hnovel|1000gxf)\.com\/App\/Ad\/countPopTotal reject-dict
+ ^https?:\/\/api\.(ainitpz|4hnovel|1000gxf)\.com\/App\/Ad\/barsUserAdInfo reject-dict
+ ^https?:\/\/api\.(ainitpz|4hnovel|1000gxf)\.com\/App\/ad\/config reject-dict
+ ^https?:\/\/api\.(ainitpz|4hnovel|1000gxf)\.com\/App\/Ad\/vajraInfo reject-dict
+ ^https?:\/\/api\.(ainitpz|4hnovel|1000gxf)\.com\/App\/Ad\/bannerInfo reject-dict
+ ^https?:\/\/api\.(ainitpz|4hnovel|1000gxf)\.com\/App\/Ad\/bardCacheAdInfo reject-dict
+ ^https?:\/\/api\.(ainitpz|4hnovel|1000gxf)\.com\/App\/Ad\/barsIndexAdInfo reject-dict
+ ^https?:\/\/api\.(ainitpz|4hnovel|1000gxf)\.com\/App\/Ad\/comicAdInfo reject-dict
+ ^https?:\/\/api\.(ainitpz|4hnovel|1000gxf)\.com\/App\/Ad\/liveEventAdInfo reject-dict
+ ^https?:\/\/api\.(ainitpz|4hnovel|1000gxf)\.com\/App\/Ad\/novelAdInfo reject-dict
+ ^https?:\/\/api\.(ainitpz|4hnovel|1000gxf)\.com\/App\/Ad\/sportAdInfo reject-dict
+ ^https?:\/\/api\.(ainitpz|4hnovel|1000gxf)\.com\/App\/Resource\/CommentAd\/show reject-dict
+ ^https?:\/\/rg829\.8f3m24\.com\/v0\.1\/public\/codepush\/update_check reject-dict
+ ^https?:\/\/(api|gzapi|jk)\..+\.com\/App\/([Aa]d\/(barsIndexAdInfo|splashInfo|vajraInfo|config|activityInfo|skitAdInfo)|IndexList\/homeFloatAd|Resource\/CommentAd|IndexPlay\/vodAdvertisement) url reject-dict
+
+ [Mitm]
+ hostname = api.ainitpz.com, api.4hnovel.com, api.1000gxf.com, rg829.8f3m24.com, api.5fcgcnn.com, api.hpdgjnf.com, api.wyw68fg.com, api.hpfcqfh.com, api.dzjxekd.com, api.qxutcee.com, api.fkkejucm.com, api.sh75d6qk.com, api.gq89em.com, api.chgjaq4.com, api.cbvbqtz.com, api.gdj2a3qy.com, api.7gmsut2m.com, api.4hnovel.com, gzapi.*.com, jk.*.com
+
+ [Script]
+ http-response ^https?:\/\/api\.(ainitpz|4hnovel|1000gxf)\.com\/App\/Resource\/Config\/getNav script-path=https://raw.githubusercontent.com/ZenmoFeiShi/Qx/refs/heads/main/TilingSales_getNav.js, requires-body=true, timeout=60, tag=瓜子影视净化
+ http-response ^https?:\/\/api\.(ainitpz|4hnovel|1000gxf)\.com\/App\/Ad\/barsPlayAdInfo script-path=https://raw.githubusercontent.com/ZenmoFeiShi/Qx/refs/heads/main/TilingSales_getNav.js, requires-body=true, timeout=60, tag=瓜子影视净化
+ http-response ^https?:\/\/api\.(ainitpz|4hnovel|1000gxf)\.com\/App\/Ad\/playAdInfo script-path=https://raw.githubusercontent.com/ZenmoFeiShi/Qx/refs/heads/main/TilingSales_getNav.js, requires-body=true, timeout=60, tag=瓜子影视净化
+ http-response ^https?:\/\/api\.(ainitpz|4hnovel|1000gxf)\.com\/App\/IndexPlay\/vodAdvertisement script-path=https://raw.githubusercontent.com/ZenmoFeiShi/Qx/refs/heads/main/TilingSales_getNav.js, requires-body=true, timeout=60, tag=瓜子影视净化
+ http-response ^https?:\/\/api\.(ainitpz|4hnovel|1000gxf)\.com\/App\/Resource\/Vod\/showOne script-path=https://raw.githubusercontent.com/ZenmoFeiShi/Qx/refs/heads/main/TilingSales_getNav.js, requires-body=true, timeout=60, tag=瓜子影视净化
+ http-response ^https?:\/\/api\.(ainitpz|4hnovel|1000gxf)\.com\/App\/Resource\/Vod\/vurlDetail script-path=https://raw.githubusercontent.com/ZenmoFeiShi/Qx/refs/heads/main/TilingSales_getNav.js, requires-body=true, timeout=60, tag=瓜子影视净化
