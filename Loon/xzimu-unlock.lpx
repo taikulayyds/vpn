@@ -1,0 +1,15 @@
+ #!name=X字幕破解
+ #!desc=已成功绕过服务器检测，会员功能全解，包括积分字幕导出功能，祝大家学习外语愉快🌹
+ #!author=ZenmoFeiShi[https://raw.githubusercontent.com/ZenmoFeiShi/Qx/refs/heads/main/xzimu-unlock.snippet]
+ #!date=2025-04-20
+ #!openUrl=https://apps.apple.com/app/id6670429646
+ #!homepage=https://github.com/ZenmoFeiShi
+ #!icon=https://github.com/taikulayyds/icon/raw/refs/heads/mina/xzimu.png
+
+ [Mitm]
+ hostname = apps.tltgame.com
+
+ [Script]
+ http-response ^http:\/\/apps\.tltgame\.com\/api\/user\/updateStatus script-path=https://raw.githubusercontent.com/ZenmoFeiShi/Qx/refs/heads/main/xzimu-unlock.js, requires-body=true, timeout=60, tag=X字幕破解1
+ http-request ^http:\/\/apps\.tltgame\.com\/api\/task\/offline\/post script-path=https://raw.githubusercontent.com/ZenmoFeiShi/Qx/refs/heads/main/xzimu-unlock.js, requires-body=true, timeout=60, tag=X字幕破解2
+ http-response ^http:\/\/apps\.tltgame\.com\/api\/task\/offline\/post script-path=https://raw.githubusercontent.com/ZenmoFeiShi/Qx/refs/heads/main/xzimu-unlock.js, requires-body=true, timeout=60, tag=X字幕破解3
