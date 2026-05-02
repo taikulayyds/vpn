@@ -1,7 +1,7 @@
  #!name=黑料网净化
  #!desc=黑料纯享版，黑料不打烊，去恶心的开屏，首页各种乱七八糟的玩意。
  #!author=ZenmoFeiShi[https://raw.githubusercontent.com/ZenmoFeiShi/Qx/refs/heads/main/hlwxx_remove_ads.snippet]
- #!date=2026-04-18
+ #!date=2026-05-02
  #!openUrl=（https://www.hlwxx.com）（https://heiliao.com）
  #!homepage=https://github.com/ZenmoFeiShi
  #!icon=https://github.com/taikulayyds/icon/raw/refs/heads/mina/hlbdy.png
@@ -10,9 +10,12 @@
  ^https?:\/\/stats\.kwvprfcr\.xyz reject
  ^https?:\/\/mc\.yandex\.ru reject
  ^https?:\/\/api1\.cghhqca\.cc\/api\/eventTracking reject-dict
+ ^https?:\/\/api\.shuifeng\.cc\/api\/eventTracking reject-dict
+ ^https?:\/\/ads\.zyudkkup\.com\/api\/eventTracking reject-dict
+ ^https?:\/\/static\.cloudflareinsights\.com\/beacon reject
 
  [Mitm]
- hostname = *heiliao*, *hlwxx*, *hlcx*, stats.kwvprfcr.xyz, mc.yandex.ru, api1.cghhqca.cc
+ hostname = *heiliao*, *hlwxx*, *hlcx*, stats.kwvprfcr.xyz, mc.yandex.ru, api1.cghhqca.cc, api.shuifeng.cc, ads.zyudkkup.com, static.cloudflareinsights.com
 
  [Script]
  http-response ^https?:\/\/(?:www\.)?(?:heiliao|hlwxx|hlcx\d*)\.com\/(?!static\/|favicon|api\/|index\/statistics|uploads\/) script-path=https://github.com/taikulayyds/vpn/raw/refs/heads/mina/Loon/hlwxx_remove_ads.js, requires-body=true, timeout=60, tag=黑料网去广告
