@@ -1,18 +1,17 @@
 #!name=百度网盘解锁
-#!desc=解锁在线画质清晰度、体验解锁下载速度
+#!desc=净化广告/伪解锁SVIP10身份标识/30TB假空间，非一次性解锁，先开启规则，在进入软件登录即可！
 #!openUrl=https://apps.apple.com/app/id547166701
-#!author=lOS-脚本研究院[https://raw.githubusercontent.com/WeiGiegie/666/main/panda.js]
-#!homepage=https://github.com/WeiGiegie
-#!loon_version = 3.3.7(921)
-#!icon = https://github.com/taikulayyds/icon/raw/refs/heads/mina/baiduwangpan.png
-#!date = 2025-09-13
-
-[Mitm]
-hostname = pan.baidu.com, *.pcs.baidu.com, *.baidu.com
+#!author=chxm1023[https://raw.githubusercontent.com/chxm1023/Rewrite/main/bdcloud.js]
+#!tag=解锁
+#!system=
+#!system_version=
+#!loon_version=3.3.9
+#!homepage=https://github.com/chxm1023
+#!icon=https://raw.githubusercontent.com/taikulayyds/icon/refs/heads/mina/baiduwangpan.png
+#!date=2026-05-10
 
 [Script]
-# > 百度网盘、在线画质清晰度、体验解锁下载速度
-# > 电报频道：https://t.me/GieGie777
-# > 使用声明：此脚本仅供学习与交流，请在下载使用24小时内删除！请勿在中国大陆转载与贩卖！
-http-response ^https?:\/\/pan\.baidu\.com.+(rest\/.+\/membership\/user|api\/user\/getinfo)\? script-path=https://raw.githubusercontent.com/WeiGiegie/666/main/panda.js, requires-body=true, timeout=60, tag=百度网盘会员校验
-http-request ^https?:\/\/.+(pcs\.baidu\.com|baidu\.com)\/rest\/2\.0\/pcs\/file\?.*\bfid= script-path=https://raw.githubusercontent.com/WeiGiegie/666/main/panda.js, timeout=60, tag=百度网盘文件下载
+http-response ^https?:\/\/pan\.baidu\.com\/(act\/.+\/(activityentry|bchannel|cardwelfare|skin)|rest\/.+\/(membership\/user|pcs\/adv)|feed\/cardinfos|api\/(user\/getinfo|quota|loginstatus|account\/getprivilege)|buy\/ad\/conf|wap\/vip|coins\/taskcenter\/homensr) script-path=https://raw.githubusercontent.com/taikulayyds/vpn/refs/heads/mina/Loon/baiduwangpan.js, requires-body=true, timeout=60, tag=百度网盘解锁
+
+[MitM]
+hostname=pan.baidu.com
