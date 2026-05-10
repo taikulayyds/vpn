@@ -15,7 +15,7 @@
 
 [mitm]
 
-hostname = pan.baidu.com
+hostname = pan.baidu.com, mbd.baidu.com
 
 *************************************/
 
