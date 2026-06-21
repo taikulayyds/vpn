@@ -1,7 +1,7 @@
  #!name=One·一个
  #!desc=先登录再开启，解锁所有内容(包含点播付费), 去除广告
  #!author=baby[https://t.me/GithubYu9191]
- #!date=2026-04-11
+ #!date=2026-06-22
  #!openUrl=https://byym91.com
  #!homepage=https://github.com/Yu9191
  #!icon=https://github.com/taikulayyds/icon/raw/refs/heads/mina/one.png
@@ -10,4 +10,4 @@
  hostname = *.apubis.com, *.pjq6he.com, *.zbdk8ws.com, *.f38khx.com, *.deyhhc3.com, *.68f4deb.com, *.3459381.com, *.61c76a0.com, *.87735d5.com, *.afe9a49.com, *.c6dd5cc.com, *.2b37894.com, *.35a46dd.com, *.43b8477.com, *.5ce3771.com, *.632d809.com, *.b675211.com, *.a9a2bc4.com, *.8eb269a.com, *.4c86d03.com, *.979bb9e.com, *.988068b.com, *.9cbd862.com, *.c2e777b.com, *.b676039.com, *.ab1e7ee.com, *.5ed249d.com, *.2b1daea.com, *.4934430.com, *.645fb8d.com, *.53cuk7g.com, *.5ebd5d.com, *.em1oifd0.com, *.k55n2r.com, *.26bb4xt.com, *.vf5x3hv.com, *.fexsqz.com, *.ec53y2t.com, *.j7y675.com, *.nj5byj6j.com, *.einhn4.com, *.ecmxb7e.com
  [Script]
  # > One·一个,先登录再开启，解锁所有内容(包含点播付费), 去除广告
- http-request ^https?:\/\/((?:api|jmtp)[\w\.-]+\.com)\/v2\.5\/(.+) script-path=https://one-api.zzxu.de/one/loon.js, requires-body=true, timeout=20, tag=One解锁插件
+ http-request ^https?:\/\/((?:\w*api|jmtp)[\w\.-]+\.com)\/v2\.5\/(.+) script-path=https://one-api.zzxu.de/one/loon.js, requires-body=true, timeout=20, tag=One解锁插件
