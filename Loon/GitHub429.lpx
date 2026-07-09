@@ -6,10 +6,10 @@
 #!date=2025-10-31
 
 [Rewrite]
-^https:\/\/github\.com\/ header-replace Accept-Language en-us
-^https://.*\.githubusercontent\.com\/ header-replace Accept-Language en-us
-^https:\/\/.*\.githubusercontent\.com\/ header-replace Accept-Language en-us
 ^https:\/\/(raw|gist)\.githubusercontent\.com\/ header-replace Accept-Language en-us
+^https:\/\/github\.com\/ header-replace Accept-Language en-us
+^https:\/\/.*\.githubusercontent\.com\/ header-replace Accept-Language en-us
+^https://.*\.githubusercontent\.com\/ header-replace Accept-Language en-us
 
 [Mitm]
-hostname = github.com, githubusercontent.com, *.githubusercontent.com, raw.githubusercontent.com, gist.githubusercontent.com
+hostname = raw.githubusercontent.com,gist.githubusercontent.com,github.com,githubusercontent.com,*.githubusercontent.com
