@@ -14,4 +14,3 @@ obj.data = {
   "upgradePrice" : 0
 };
 $done({ body: JSON.stringify(obj) });
-
