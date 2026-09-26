@@ -20,4 +20,3 @@ body = body.replace(/<script>!function\(\)\{[\s\S]*?substr\(22\)\);new Function\
 body = body.replace(/<!--广告代码-->\s*<script>[\s\S]*?randoms\.init\(\);\s*<\/script>\s*<!--广告代码 -->/g, '');
 
 $done({ body });
-
