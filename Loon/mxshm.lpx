@@ -11,4 +11,4 @@
 
  [Script]
  # 漫小肆韓漫，去除污秽广告（https://t.me/GithubYu9191）
- http-response ^https:\/\/www\.mxs11\.cc\/(chapter|book)\/\d+ script-path=https://raw.githubusercontent.com/Yu9191/Rewrite/refs/heads/main/mxshm.js, requires-body=true, timeout=60, tag=漫小肆韓漫
+ http-response ^https:\/\/www\.mxs11\.cc\/(chapter|book)\/\d+ script-path=https://raw.githubusercontent.com/taikulayyds/vpn/refs/heads/mina/Loon/mxshm.js, requires-body=true, timeout=60, tag=漫小肆韓漫
