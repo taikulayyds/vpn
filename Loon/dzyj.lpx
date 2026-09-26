@@ -10,7 +10,7 @@
 #!date=2025-10-13
 
 [Script]
-http-response https://mobile-new.chinaeew.cn/v1/order/apple/vip script-path=https://raw.githubusercontent.com/Yu9191/Rewrite/refs/heads/main/dzyj.js, requires-body=true, timeout=60, tag=地震预警解锁SVIP
+http-response https://mobile-new.chinaeew.cn/v1/order/apple/vip script-path=https://raw.githubusercontent.com/taikulayyds/vpn/refs/heads/mina/Loon/dzyj.js, requires-body=true, timeout=60, tag=地震预警解锁SVIP
 
 [MitM]
 hostname = mobile-new.chinaeew.cn
