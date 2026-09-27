@@ -6,7 +6,7 @@
 #!date=2026-09-02
 
 [Script]
-http-response ^https?://huangguoai\.com script-path=https://raw.githubusercontent.com/Yu9191/Rewrite/main/huangguoduanju/dist/huangguo.js, requires-body=true, timeout=30, tag=黄果短剧
+http-response ^https?://huangguoai\.com script-path=https://raw.githubusercontent.com/taikulayyds/vpn/refs/heads/mina/Loon/huangguo.js, requires-body=true, timeout=30, tag=黄果短剧
 
 [Rule]
 URL-REGEX,^https?://[^/]*adsdk[12]\.cc,REJECT
